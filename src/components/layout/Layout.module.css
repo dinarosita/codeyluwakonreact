@@ -1,0 +1,10 @@
+.main {
+    margin: .5rem;
+    padding: .5rem
+  }
+
+  .main h1 {
+    color: olive;
+    margin: 0;
+    font-size:xx-large;
+  }

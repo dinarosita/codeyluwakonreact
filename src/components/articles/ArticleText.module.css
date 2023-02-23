@@ -1,0 +1,23 @@
+.paratitle {
+    color:olive;
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 0;
+}
+
+.listintro {
+    margin-bottom: 0;
+}
+.paratitle + ul, 
+.paratitle + p,
+.listintro + ul {
+    margin-top: 0.25rem;
+}
+
+.codebox {
+    border: 2px solid palegoldenrod;
+    border-radius: 3px;
+    padding: .75rem .5rem;
+    margin: 0.25rem 0;
+    width: fit-content;
+}
