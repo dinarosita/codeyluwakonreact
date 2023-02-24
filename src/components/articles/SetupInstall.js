@@ -1,5 +1,4 @@
 import React from "react";
-import classes from "../layout/Section.module.css";
 
 export default function SetupInstall() {
   return (

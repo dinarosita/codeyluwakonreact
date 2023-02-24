@@ -17,7 +17,7 @@
     margin: 0
 }
 
-.codebox {
+.section pre {
     border: 2px solid palegoldenrod;
     border-radius: 6px;
     padding: .5rem;

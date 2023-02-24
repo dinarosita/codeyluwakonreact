@@ -16,13 +16,16 @@ export default function MainNavigation() {
             <Link to="/setup">Setup</Link>
           </li>
           <li>
-            <Link to="/terminal">Terminal</Link>
+            <Link to="/routing">Routing</Link>
           </li>
           <li>
             <Link to="/component">Component</Link>
           </li>
           <li>
             <Link to="/hook">Hook</Link>
+          </li>
+          <li>
+            <Link to="/terminal">Terminal</Link>
           </li>
         </ul>
       </nav>

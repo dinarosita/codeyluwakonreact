@@ -3,6 +3,7 @@ import SetupInstall from "../components/articles/SetupInstall";
 import SetupCreate from "../components/articles/SetupCreate";
 import SetupGithub from "../components/articles/SetupGithub";
 import Section from "../components/layout/Section";
+import RoutingInstall from "../components/articles/RoutingInstall";
 
 export default function SetupPage() {
   return (
@@ -16,6 +17,9 @@ export default function SetupPage() {
       </Section>
       <Section>
         <SetupGithub />
+      </Section>
+      <Section>
+        <RoutingInstall />
       </Section>
     </>
   );

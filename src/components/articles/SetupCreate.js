@@ -1,5 +1,4 @@
 import React from "react";
-import classes from "../layout/Section.module.css";
 
 export default function SetupCreate() {
   const text1 = String.raw`export default function App() {
@@ -54,13 +53,13 @@ root.render(<App />);`;
             <code>
               <em>App.js</em>
             </code>
-            <pre className={classes.codebox}>{text1}</pre>
+            <pre>{text1}</pre>
           </li>
           <li>
             <code>
               <em>index.js</em>
             </code>
-            <pre className={classes.codebox}>{text2}</pre>
+            <pre>{text2}</pre>
           </li>
           <li>
             <code>

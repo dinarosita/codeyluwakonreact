@@ -4,6 +4,7 @@ import ComponentPage from "./pages/Component";
 import HookPage from "./pages/Hook";
 import Layout from "./components/layout/Layout";
 import TerminalPage from "./pages/Terminal";
+import RoutingPage from "./pages/Routing";
 
 function App() {
   return (
@@ -11,6 +12,9 @@ function App() {
       <Switch>
         <Route path="/setup">
           <SetupPage />
+        </Route>
+        <Route path="/routing">
+          <RoutingPage />
         </Route>
         <Route path="/terminal">
           <TerminalPage />
