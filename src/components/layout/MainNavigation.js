@@ -19,10 +19,10 @@ export default function MainNavigation() {
             <Link to="/terminal">Terminal</Link>
           </li>
           <li>
-            <Link to="/components">Components</Link>
+            <Link to="/component">Component</Link>
           </li>
           <li>
-            <Link to="/hooks">Hooks</Link>
+            <Link to="/hook">Hook</Link>
           </li>
         </ul>
       </nav>

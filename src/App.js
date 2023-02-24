@@ -1,7 +1,7 @@
 import { Route, Switch } from "react-router-dom";
 import SetupPage from "./pages/Setup";
-import ComponentsPage from "./pages/Components";
-import HooksPage from "./pages/Hooks";
+import ComponentPage from "./pages/Component";
+import HookPage from "./pages/Hook";
 import Layout from "./components/layout/Layout";
 import TerminalPage from "./pages/Terminal";
 
@@ -15,11 +15,11 @@ function App() {
         <Route path="/terminal">
           <TerminalPage />
         </Route>
-        <Route path="/hooks">
-          <HooksPage />
+        <Route path="/hook">
+          <HookPage />
         </Route>
-        <Route path="/components">
-          <ComponentsPage />
+        <Route path="/component">
+          <ComponentPage />
         </Route>
       </Switch>
     </Layout>

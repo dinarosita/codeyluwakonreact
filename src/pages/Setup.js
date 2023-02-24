@@ -1,15 +1,22 @@
 import React from "react";
-import Installation from "../components/articles/Installation";
-import CreateReactProject from "../components/articles/CreateReactProject";
-import Github from "../components/articles/Github";
-import Chapter from "../components/layout/Chapter";
+import SetupInstall from "../components/articles/SetupInstall";
+import SetupCreate from "../components/articles/SetupCreate";
+import SetupGithub from "../components/articles/SetupGithub";
+import Section from "../components/layout/Section";
 
 export default function SetupPage() {
   return (
-    <Chapter title="Setup">
-        <Installation />
-        <CreateReactProject />
-        <Github />
-    </Chapter>
+    <>
+      <h1>Setup</h1>
+      <Section>
+        <SetupInstall />
+      </Section>
+      <Section>
+        <SetupCreate />
+      </Section>
+      <Section>
+        <SetupGithub />
+      </Section>
+    </>
   );
 }

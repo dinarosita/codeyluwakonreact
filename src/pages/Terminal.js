@@ -1,13 +1,18 @@
 import React from "react";
 import TerminalBrowser from "../components/articles/TerminalBrowser";
 import TerminalGithub from "../components/articles/TerminalGithub";
-import Chapter from "../components/layout/Chapter";
+import Section from "../components/layout/Section";
 
 export default function TerminalPage() {
   return (
-    <Chapter title="Terminal">
+    <>
+      <h1>Terminal Commands</h1>
+      <Section>
         <TerminalBrowser />
+      </Section>
+      <Section>
         <TerminalGithub />
-    </Chapter>
+      </Section>
+    </>
   );
 }
