@@ -2,8 +2,8 @@ import React from "react";
 import SetupInstall from "../articles/SetupInstall";
 import SetupCreate from "../articles/SetupCreate";
 import SetupGithub from "../articles/SetupGithub";
-import Section from "../components/layout/Section";
-import RoutingInstall from "../articles/RoutingInstall";
+import Section from "../components/ui/Section";
+import RrdomInstall from "../articles/RrdomInstall";
 
 export default function SetupPage() {
   return (
@@ -19,7 +19,7 @@ export default function SetupPage() {
         <SetupGithub />
       </Section>
       <Section>
-        <RoutingInstall />
+        <RrdomInstall />
       </Section>
     </>
   );

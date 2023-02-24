@@ -6,7 +6,7 @@ import classes from "./MainNavigation.module.css";
 export default function MainNavigation() {
   return (
     <header className={classes.header}>
-      <Link to="/" exact>
+      <Link to="/home">
         <div className={classes.logo}>
           {/* <img src={logo} alt="CodeyLuwak on ReactJS" /> */}
           CodeyLuwak on React
@@ -15,10 +15,22 @@ export default function MainNavigation() {
       <nav>
         <ul>
           <li>
+            <Link to="/components">Components</Link>
+          </li>
+          <li>
+            <Link to="/css">CSS</Link>
+          </li>
+          <li>
             <Link to="/hook">Hook</Link>
           </li>
           <li>
-            <Link to="/routing">Routing</Link>
+            <Link to="/listing">Listing</Link>
+          </li>
+          <li>
+            <Link to="/properties">Properties</Link>
+          </li>
+          <li>
+            <Link to="/rrdom">React Router Dom</Link>
           </li>
           <li>
             <Link to="/setup">Setup</Link>
@@ -28,9 +40,6 @@ export default function MainNavigation() {
           </li>
           <li>
             <Link to="/wrapper">Wrapper</Link>
-          </li>
-          <li>
-            <Link to="/template">*Template</Link>
           </li>
         </ul>
       </nav>

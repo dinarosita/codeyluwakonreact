@@ -1,11 +1,10 @@
 import React from "react";
 
-export default function RoutingInstall() {
+export default function RrdomInstall() {
   return (
     <>
-      <h2>React Router Dom</h2>
+      <h2>Installing React Router Dom</h2>
       <div>
-        <p>Installation</p>
         <ul>
           <li>
             <code>npm install --save react-router-dom@5</code>

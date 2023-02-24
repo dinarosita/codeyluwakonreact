@@ -1,7 +1,7 @@
 import React from "react";
 import TerminalBrowser from "../articles/TerminalBrowser";
 import TerminalGithub from "../articles/TerminalGithub";
-import Section from "../components/layout/Section";
+import Section from "../components/ui/Section";
 
 export default function TerminalPage() {
   return (

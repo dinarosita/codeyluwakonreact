@@ -1,4 +1,5 @@
 import React from "react";
+import CodeTemplate from "../codesnippets/CodeTemplate";
 
 export default function ArticleTemplate() {
   const text1 = String.raw`Code`;
@@ -19,6 +20,8 @@ export default function ArticleTemplate() {
       <div>
         <p>File.js</p>
         <pre>{text1}</pre>
+      </div>
+      <div><CodeTemplate />
       </div>
     </>
   );

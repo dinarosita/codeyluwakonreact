@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function RoutingRouteSwitch() {
+export default function RrdomRouteSwitch() {
   const text1 = String.raw`import { Route, Switch } from "react-router-dom";
 ...
 
@@ -11,7 +11,7 @@ function App() {
         <Route path="/" exact>
           <SetupPage />
         </Route>
-        <Route path="/routing">
+        <Route path="/rrdom">
           <RoutingPage />
         </Route>
       </Switch>

@@ -20,7 +20,7 @@
 .section h3 {
   color: olive;
   font-size:large;
-  margin: 0;
+  margin: 0 0 .25rem;
 }
 
 .section pre {

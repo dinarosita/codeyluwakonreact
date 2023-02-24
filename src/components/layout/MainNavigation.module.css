@@ -19,8 +19,9 @@
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 1.5rem;
+    column-gap: 1.5rem;
     align-items: baseline;
+    flex-wrap: wrap;
   }
   
   .header li {

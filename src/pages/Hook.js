@@ -1,5 +1,5 @@
 import React from "react";
-import Section from "../components/layout/Section";
+import Section from "../components/ui/Section";
 
 export default function HookPage() {
   return (

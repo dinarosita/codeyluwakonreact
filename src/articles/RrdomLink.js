@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function RoutingLink() {
+export default function RrdomLink() {
     const text1 = String.raw`import { Link } from "react-router-dom";
 ...
 
@@ -12,7 +12,7 @@ export default function MainNavigation() {
           <Link to="/">Setup</Link>
         </li>
         <li>
-          <Link to="/routing">Routing</Link>
+          <Link to="/rrdom">Rrdom</Link>
         </li>
       </ul>
     </nav>

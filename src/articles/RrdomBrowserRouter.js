@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function RoutingBrowserRouter() {
+export default function RrdomBrowserRouter() {
   const text1 = String.raw`import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from "react-router-dom";
