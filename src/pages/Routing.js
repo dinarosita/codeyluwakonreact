@@ -1,8 +1,8 @@
 import React from "react";
-import RoutingBrowserRouter from "../components/articles/RoutingBrowserRouter";
-import RoutingInstall from "../components/articles/RoutingInstall";
-import RoutingLink from "../components/articles/RoutingLink";
-import RoutingRouteSwitch from "../components/articles/RoutingRouteSwitch";
+import RoutingBrowserRouter from "../articles/RoutingBrowserRouter";
+import RoutingInstall from "../articles/RoutingInstall";
+import RoutingLink from "../articles/RoutingLink";
+import RoutingRouteSwitch from "../articles/RoutingRouteSwitch";
 import Section from "../components/layout/Section";
 
 export default function RoutingPage() {

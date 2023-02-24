@@ -1,9 +1,9 @@
 import React from "react";
-import SetupInstall from "../components/articles/SetupInstall";
-import SetupCreate from "../components/articles/SetupCreate";
-import SetupGithub from "../components/articles/SetupGithub";
+import SetupInstall from "../articles/SetupInstall";
+import SetupCreate from "../articles/SetupCreate";
+import SetupGithub from "../articles/SetupGithub";
 import Section from "../components/layout/Section";
-import RoutingInstall from "../components/articles/RoutingInstall";
+import RoutingInstall from "../articles/RoutingInstall";
 
 export default function SetupPage() {
   return (

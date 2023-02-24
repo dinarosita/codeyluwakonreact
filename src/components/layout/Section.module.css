@@ -1,27 +1,33 @@
 .section {
-    border: 5px double rgba(128, 128, 0, 0.454);
-    border-radius: 5px;
-    padding:1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  border: 5px double rgba(128, 128, 0, 0.454);
+  border-radius: 5px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .section * {
-    margin: 0
+  margin: 0;
 }
 
 .section h2 {
-    color: olive;
-    font-size: x-large;
-    margin: 0
+  color: olive;
+  font-size: x-large;
+  margin: 0;
+}
+
+.section h3 {
+  color: olive;
+  font-size:large;
+  margin: 0;
 }
 
 .section pre {
-    border: 2px solid palegoldenrod;
-    border-radius: 6px;
-    padding: .5rem;
-    display: block;
-    width: fit-content;
-    margin: .25rem 0 .5rem -.25rem;
+  border: 2px solid palegoldenrod;
+  border-radius: 6px;
+  padding: 0.5rem;
+  display: block;
+  width: fit-content;
+  margin: 0.25rem 0 0.5rem -0.25rem;
 }
