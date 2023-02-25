@@ -10,6 +10,8 @@ import PropertiesPage from "./pages/Properties";
 import ComponentsPage from "./pages/Components";
 import ListingPage from "./pages/Listing";
 import CssPage from "./pages/Css";
+import FormPage from "./pages/Form";
+import GithubPage from "./pages/Github";
 
 function App() {
   return (
@@ -20,6 +22,12 @@ function App() {
         </Route>
         <Route path="/css">
           <CssPage />
+        </Route>
+        <Route path="/form">
+          <FormPage />
+        </Route>
+        <Route path="/github">
+          <GithubPage />
         </Route>
         <Route path="/home">
           <HomePage />

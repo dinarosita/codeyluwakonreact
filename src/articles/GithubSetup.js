@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function SetupGithub() {
+export default function GithubSetup() {
   return (
     <>
       <h2>Github and Local Repo</h2>

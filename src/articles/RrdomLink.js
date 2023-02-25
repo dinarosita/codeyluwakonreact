@@ -20,7 +20,7 @@ export default function MainNavigation() {
 }`
   return (
     <>
-      <h2>Link Component</h2>
+      <h2>React Router Dom: Link Component</h2>
 
       <div>
         <p>MainNavigation.js</p>

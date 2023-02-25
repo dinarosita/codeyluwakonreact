@@ -2,16 +2,10 @@ import React from "react";
 import WrapperCode from "../codesnippets/WrapperCode";
 
 export default function WrapperChildren() {
-  const wrapperText = String.raw`function Wrapper(props) {
-  return (
-    <div className={classes.wrapper}>
-        {props.children}
-    </div>
-  )
-}`;
+
   return (
     <>
-      <h2>Wrapper's Children Property</h2>
+      <h2>Wrapper: Children Property</h2>
 
       <div>
         <h3>

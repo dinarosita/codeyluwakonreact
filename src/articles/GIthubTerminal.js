@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function TerminalGithub() {
+export default function GithubTerminal() {
   return (
     <>
       <h2>Update Github</h2>

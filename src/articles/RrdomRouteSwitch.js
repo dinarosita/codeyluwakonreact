@@ -23,7 +23,7 @@ export default App;
 `;
   return (
     <>
-      <h2>Router and Switch Component</h2>
+      <h2>React Router Dom: Router and Switch Component</h2>
 
       <div>
         <p>App.js</p>

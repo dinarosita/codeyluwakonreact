@@ -21,6 +21,12 @@ export default function MainNavigation() {
             <Link to="/css">CSS</Link>
           </li>
           <li>
+            <Link to="/form">Form</Link>
+          </li>
+          <li>
+            <Link to="/github">Github</Link>
+          </li>
+          <li>
             <Link to="/hook">Hook</Link>
           </li>
           <li>

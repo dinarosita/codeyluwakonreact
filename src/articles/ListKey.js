@@ -14,7 +14,7 @@ const todoNoId = String.raw`const todoItems = todos.map((todo, index) =>
 );`
   return (
     <>
-      <h2>Listing's Key Property</h2>
+      <h2>Listing: Key Property</h2>
       <div>
         <p>
           Each child in a list should have a unique "key" prop. You will see a

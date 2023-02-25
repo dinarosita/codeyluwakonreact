@@ -16,7 +16,7 @@ root.render(
 );`;
   return (
     <>
-      <h2>BrowserRouter Component</h2>
+      <h2>React Router Dom: BrowserRouter Component</h2>
 
       <div>
         <p>index.js</p>
