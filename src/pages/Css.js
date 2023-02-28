@@ -1,7 +1,7 @@
 import React from "react";
-import CssIndex from "../articles/CssIndex";
-import CssModule from "../articles/CssModule";
-import Section from "../components/ui/Section";
+import CssIndex from "../data/articles/CssIndex";
+import CssModule from "../data/articles/CssModule";
+import Section from "../components/wrapper/Section";
 
 export default function CssPage() {
   return (

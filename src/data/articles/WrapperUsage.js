@@ -24,6 +24,11 @@ const childComponent = String.raw`<Wrapper>
         <p>Can be outsourced from another react component</p>
         <pre>{childComponent}</pre>
       </div>
+
+      <div>
+        <p>Can also be used as template using properties</p>
+        <pre>&lt;Wrapper name="Elsa" age="12" /&gt;</pre>
+      </div>
     </>
   );
 }

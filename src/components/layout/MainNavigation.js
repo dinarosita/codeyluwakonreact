@@ -15,13 +15,13 @@ export default function MainNavigation() {
       <nav>
         <ul>
           <li>
-            <Link to="/components">Components</Link>
-          </li>
-          <li>
             <Link to="/css">CSS</Link>
           </li>
           <li>
             <Link to="/form">Form</Link>
+          </li>
+          <li>
+            <Link to="/form-submit">Form Submission</Link>
           </li>
           <li>
             <Link to="/github">Github</Link>

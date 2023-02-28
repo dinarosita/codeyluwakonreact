@@ -1,4 +1,6 @@
 import React from "react";
+import Formula from "../../components/wrapper/Formula";
+import SectionHeader from "../../components/wrapper/SectionHeader";
 
 export default function ListKey() {
   const todoId = String.raw`const todoItems = todos.map((todo) =>
@@ -7,14 +9,21 @@ export default function ListKey() {
   </li>
 );`;
 
-const todoNoId = String.raw`const todoItems = todos.map((todo, index) =>
+  const todoNoId = String.raw`const todoItems = todos.map((todo, index) =>
 <li key={index}>
   {todo.text}
 </li>
-);`
+);`;
   return (
     <>
-      <h2>Listing: Key Property</h2>
+      <SectionHeader
+        title="Key"
+        tagline="Important unique property for automatically generated li element"
+      >
+        <Formula>
+          &lt;li key={"{"}id{"}"}&gt;
+        </Formula>
+      </SectionHeader>
       <div>
         <p>
           Each child in a list should have a unique "key" prop. You will see a
@@ -33,12 +42,15 @@ const todoNoId = String.raw`const todoItems = todos.map((todo, index) =>
         </p>
         <ul>
           <li>
-            If the dataList comes with unique and stable id for each element, use that.
+            If the dataList comes with unique and stable id for each element,
+            use that.
             <br />
             <pre>{todoId}</pre>
           </li>
           <li>
-            If no such thing, generate using index. However this is not a very safe way because the order of data might change.<br/>
+            If no such thing, generate using index. However this is not a very
+            safe way because the order of data might change.
+            <br />
             <pre>{todoNoId}</pre>
           </li>
         </ul>

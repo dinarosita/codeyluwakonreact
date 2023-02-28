@@ -31,8 +31,8 @@ export default function GithubSetup() {
             Add <strong>homepage</strong> property below name and version:{" "}
             <br />
             <code>
-              "homepage": "https://<em>git-name</em>.github.io/
-              <em>repo-name</em>",
+              "homepage": "https://<em>gitName</em>.github.io/
+              <em>repoName</em>",
             </code>
           </li>
           <li>
@@ -46,15 +46,9 @@ export default function GithubSetup() {
       </div>
 
       <div>
-        <p>Add remote</p>
+        <p>Add remote (SSH)</p>
         <ul>
-          <li>
-            <code>
-              git remote add origin https://github.com/<em>git-name</em>/
-              <em>repo-name</em>.git
-            </code>{" "}
-            &mdash; Add remote pointing to github repo
-          </li>
+          <li><code>git remote set-url origin git@github.com:<em>gitName</em>/<em>repoName</em>.git</code></li>
         </ul>
       </div>
 

@@ -1,7 +1,7 @@
 import React from "react";
-import GithubSetup from "../articles/GithubSetup";
-import GithubTerminal from "../articles/GIthubTerminal";
-import Section from "../components/ui/Section";
+import GithubSetup from "../data/articles/GithubSetup";
+import GithubTerminal from "../data/articles/GIthubTerminal";
+import Section from "../components/wrapper/Section";
 
 export default function GithubPage() {
   return (

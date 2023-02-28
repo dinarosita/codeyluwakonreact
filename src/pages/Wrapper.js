@@ -1,8 +1,8 @@
 import React from "react";
-import WrapperChildren from "../articles/WrapperChildren";
-import WrapperComponent from "../articles/WrapperComponent";
-import WrapperUsage from "../articles/WrapperUsage";
-import Section from "../components/ui/Section";
+import WrapperChildren from "../data/articles/WrapperChildren";
+import WrapperComponent from "../data/articles/WrapperComponent";
+import WrapperUsage from "../data/articles/WrapperUsage";
+import Section from "../components/wrapper/Section";
 
 export default function ComponentPage() {
   return (

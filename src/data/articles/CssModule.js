@@ -1,4 +1,5 @@
 import React from "react";
+import Formula from "../../components/wrapper/Formula";
 
 export default function CssModule() {
   return (
@@ -11,11 +12,11 @@ export default function CssModule() {
           attach css file to specific components.
         </p>
 
-        <pre>Filename.module.css</pre>
-        <pre>import classes from "./Filename.module.css"</pre>
-        <pre>
+        <Formula>Filename.module.css</Formula>
+        <Formula>import classes from "./Filename.module.css"</Formula>
+        <Formula>
           &lt;div className={"{"}classes.codebox{"}"}&gt;
-        </pre>
+        </Formula>
       </div>
     </>
   );

@@ -1,9 +1,9 @@
 import React from "react";
-import SetupInstall from "../articles/SetupInstall";
-import SetupCreate from "../articles/SetupCreate";
-import GithubSetup from "../articles/GithubSetup";
-import Section from "../components/ui/Section";
-import RrdomInstall from "../articles/RrdomInstall";
+import SetupInstall from "../data/articles/SetupInstall";
+import SetupCreate from "../data/articles/SetupCreate";
+import GithubSetup from "../data/articles/GithubSetup";
+import Section from "../components/wrapper/Section";
+import RrdomInstall from "../data/articles/RrdomInstall";
 
 export default function SetupPage() {
   return (

@@ -1,9 +1,9 @@
 import React from "react";
-import RrdomBrowserRouter from "../articles/RrdomBrowserRouter";
-import RrdomInstall from "../articles/RrdomInstall";
-import RrdomLink from "../articles/RrdomLink";
-import RrdomRouteSwitch from "../articles/RrdomRouteSwitch";
-import Section from "../components/ui/Section";
+import RrdomBrowserRouter from "../data/articles/RrdomBrowserRouter";
+import RrdomInstall from "../data/articles/RrdomInstall";
+import RrdomLink from "../data/articles/RrdomLink";
+import RrdomRouteSwitch from "../data/articles/RrdomRouteSwitch";
+import Section from "../components/wrapper/Section";
 
 export default function RoutingPage() {
   return (

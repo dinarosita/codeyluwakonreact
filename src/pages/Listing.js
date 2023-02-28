@@ -1,7 +1,7 @@
 import React from "react";
-import ListKey from "../articles/ListKey";
-import ListRendering from "../articles/ListRendering";
-import Section from "../components/ui/Section";
+import ListKey from "../data/articles/ListKey";
+import ListRendering from "../data/articles/ListRendering";
+import Section from "../components/wrapper/Section";
 
 export default function ListingPage() {
   return (

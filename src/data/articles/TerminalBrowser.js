@@ -14,7 +14,7 @@ export default function TerminalBrowser() {
             <code>ctrl-C</code> &mdash; To close browser when finished
           </li>
           <li>
-            <code>npx kill port 3000</code> &mdash; To force close a port e.g.
+            <code>npx kill-port 3000</code> &mdash; To force close a port e.g.
             3000
           </li>
         </ul>

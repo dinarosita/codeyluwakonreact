@@ -1,17 +1,16 @@
 import React from "react";
-import WrapperCode from "../codesnippets/WrapperCode";
+import Formula from "../../components/wrapper/Formula";
+import SectionHeader from "../../components/wrapper/SectionHeader";
+import WrapperCode from "../codes/WrapperCode";
 
 export default function WrapperChildren() {
-
   return (
     <>
-      <h2>Wrapper: Children Property</h2>
+      <SectionHeader title="children" tagline="Important property for wrappers">
+        <Formula>{"{"}props.children{"}"}</Formula>
+      </SectionHeader>
 
       <div>
-        <h3>
-          {"{"}props.children{"}"}
-        </h3>
-
         <p>
           To actually able to pass along the wrapped children components, the
           wrapper function return must include <code>children</code> prop.
@@ -20,8 +19,10 @@ export default function WrapperChildren() {
           closing component tags.
         </p>
       </div>
+
       <div>
-        <WrapperCode />
+        <h3>Wrapper.js</h3>
+        <WrapperCode />        
       </div>
     </>
   );

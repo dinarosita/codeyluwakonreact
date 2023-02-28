@@ -7,24 +7,24 @@ import TerminalPage from "./pages/Terminal";
 import RoutingPage from "./pages/Rrdom";
 import HomePage from "./pages/Home";
 import PropertiesPage from "./pages/Properties";
-import ComponentsPage from "./pages/Components";
 import ListingPage from "./pages/Listing";
 import CssPage from "./pages/Css";
 import FormPage from "./pages/Form";
 import GithubPage from "./pages/Github";
+import FormSubmitPage from "./pages/FormSubmit";
 
 function App() {
   return (
     <Layout>
       <Switch>
-        <Route path="/components">
-          <ComponentsPage />
-        </Route>
         <Route path="/css">
           <CssPage />
         </Route>
         <Route path="/form">
           <FormPage />
+        </Route>
+        <Route path="/form-submit">
+          <FormSubmitPage />
         </Route>
         <Route path="/github">
           <GithubPage />

@@ -1,8 +1,8 @@
 import React from "react";
-import LabelHtmlfor from "../articles/LabelHtmlfor";
-import ListKey from "../articles/ListKey";
-import WrapperChildren from "../articles/WrapperChildren";
-import Section from "../components/ui/Section";
+import LabelHtmlfor from "../data/articles/LabelHtmlfor";
+import ListKey from "../data/articles/ListKey";
+import WrapperChildren from "../data/articles/WrapperChildren";
+import Section from "../components/wrapper/Section";
 
 export default function PropertiesPage() {
   return (

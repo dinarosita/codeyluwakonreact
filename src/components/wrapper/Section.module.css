@@ -14,13 +14,11 @@
 .section h2 {
   color: olive;
   font-size: x-large;
-  margin: 0;
 }
 
 .section h3 {
   color: olive;
   font-size:large;
-  margin: 0 0 .25rem;
 }
 
 .section pre {
@@ -30,4 +28,12 @@
   display: block;
   width: fit-content;
   margin: 0.25rem 0 0.5rem -0.25rem;
+}
+
+.section h2,
+.section h3,
+.section h4,
+.section h5,
+.section h6, {
+    margin-bottom: 1.25rem;
 }
