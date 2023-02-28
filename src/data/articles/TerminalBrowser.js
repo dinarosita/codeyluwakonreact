@@ -1,9 +1,9 @@
 import React from "react";
+import Article from "../../components/wrapper/Article";
 
 export default function TerminalBrowser() {
   return (
-    <>
-      <h2>Open and close browser</h2>
+    <Article title="Open and close browser">
       <div>
         <p>Some handy commands:</p>
         <ul>
@@ -19,6 +19,6 @@ export default function TerminalBrowser() {
           </li>
         </ul>
       </div>
-    </>
+    </Article>
   );
 }

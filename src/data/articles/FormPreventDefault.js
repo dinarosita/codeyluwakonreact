@@ -1,18 +1,12 @@
 import React from "react";
+import Article from "../../components/wrapper/Article";
 import Formula from "../../components/wrapper/Formula";
-import SectionHeader from "../../components/wrapper/SectionHeader";
 import EventPreventDefault from "../codes/EventPreventDefaultCode";
 
 export default function FormPreventDefault() {
   return (
-    <>
-      <SectionHeader
-        title="Prevent Default"
-        tagline="An event method"
-        formula="event.preventDefault()"
-      >
-        <Formula>event.preventDefault()</Formula>
-      </SectionHeader>
+    <Article title="Prevent Default" tagline="An event method">
+      <Formula>event.preventDefault()</Formula>
 
       <div>
         <h3>onSubmit has event object</h3>
@@ -39,6 +33,6 @@ export default function FormPreventDefault() {
         <h3>submitHandler function</h3>
         <EventPreventDefault />
       </div>
-    </>
+    </Article>
   );
 }

@@ -1,39 +1,31 @@
 import React from "react";
+import Article from "../../components/wrapper/Article";
 
 export default function FormSubmission() {
   return (
-    <>
-      <h2>Form Submission</h2>
-
+    <Article title="Submitting a form">
       <div>
-        <p>Handling the form submission:</p>
+        <h3>Listen to the submission</h3>
+        <p>
+          By default, <code>onSubmit</code> is triggered when a button within
+          form element is triggered.
+        </p>
+      </div>
+      <div>
+        <h3>Set up browser submission behaviour</h3>
         <ul>
           <li>
-            Listen to the submission
-            <ul>
-              <li>
-                By default, <code>onSubmit</code> is triggered when a button
-                within form element is triggered.
-              </li>
-            </ul>
+            Prevent browser default behaviour of sending http request
+            automatically and reload the page.
           </li>
           <li>
-            Set up browser submission behaviour:
-            <ul>
-              <li>
-                Prevent browser default behaviour of sending http request
-                automatically and reload the page.
-              </li>
-              <li>
-                Instead, handle the submission with React JavaScript. It might
-                still involve sending http request later, but we want that to
-                happen behind the scene without reloading the page.
-              </li>
-              <li>We also need to read the entered values</li>
-            </ul>
+            Instead, handle the submission with React JavaScript. It might still
+            involve sending http request later, but we want that to happen
+            behind the scene without reloading the page.
           </li>
+          <li>We also need to read the entered values</li>
         </ul>
       </div>
-    </>
+    </Article>
   );
 }

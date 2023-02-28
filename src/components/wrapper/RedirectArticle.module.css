@@ -1,4 +1,4 @@
-.sectionlink {
+.redirect {
   border: 5px double rgba(128, 128, 0, 0.454);
   border-radius: 5px;
   /* padding: 1rem; */
@@ -7,7 +7,7 @@
   gap: 1rem;
 }
 
-.sectionlink > a {
+.redirect > a {
   font-size: x-large;
   color: olive;
   font-weight: bold;
@@ -15,7 +15,7 @@
   display: inline-block;
 }
 
-.sectionlink > a:hover {
+.redirect > a:hover {
   color: white;
   background-color: rgba(128, 128, 0, 0.454);
 }

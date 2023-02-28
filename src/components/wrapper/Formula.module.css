@@ -3,5 +3,7 @@ pre.formula {
     padding: .5rem .5rem .25rem;
     color: darksalmon;
     font-weight: bold;
-    margin-top: .25rem;
+    display: block;
+    width: fit-content;
+    margin: .25rem 0;
 }

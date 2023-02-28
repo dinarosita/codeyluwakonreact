@@ -1,21 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import classes from "./MainNavigation.module.css";
-// import logo from "../../images/logo32pale.png";
 
 export default function MainNavigation() {
   return (
     <header className={classes.header}>
-      <Link to="/home">
-        <div className={classes.logo}>
-          {/* <img src={logo} alt="CodeyLuwak on ReactJS" /> */}
-          CodeyLuwak on React
-        </div>
+      <Link to="/home" className={classes.logo}>
+        <div>CodeyLuwak on React</div>
       </Link>
       <nav>
         <ul>
           <li>
             <Link to="/css">CSS</Link>
+          </li>
+          <li>
+            <Link to="/firebase">Firebase</Link>
           </li>
           <li>
             <Link to="/form">Form</Link>
@@ -28,6 +27,9 @@ export default function MainNavigation() {
           </li>
           <li>
             <Link to="/hook">Hook</Link>
+          </li>
+          <li>
+            <Link to="/httprequest">HTTP Request</Link>
           </li>
           <li>
             <Link to="/listing">Listing</Link>

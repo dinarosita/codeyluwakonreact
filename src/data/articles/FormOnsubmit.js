@@ -1,15 +1,15 @@
 import React from "react";
+import Article from "../../components/wrapper/Article";
 import Formula from "../../components/wrapper/Formula";
-import SectionHeader from "../../components/wrapper/SectionHeader";
 
 export default function FormOnsubmit() {
   return (
-    <>
-      <SectionHeader title="onSubmit" tagline="Property of form element">
+    <Article title="onSubmit" tagline="Property of form element">
+      <div>
         <Formula>
           &lt;form onSubmit={"{"}submitHandler{"}"} &gt;
         </Formula>
-      </SectionHeader>
+      </div>
 
       <div>
         <h3>onSubmit for listening submission event</h3>
@@ -27,8 +27,10 @@ export default function FormOnsubmit() {
             Thus <code>submitHandler</code> function is called.
           </li>
         </ul>
+      </div>
+      <div>
         <Formula>&lt;button&gt;Submit&lt;/button&gt;</Formula>
       </div>
-    </>
+    </Article>
   );
 }

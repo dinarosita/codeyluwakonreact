@@ -1,7 +1,7 @@
 import React from "react";
-import classes from "./SectionHeader.module.css";
+import classes from "./TitleSection.module.css";
 
-export default function SectionHeader(props) {
+export default function TitleSection(props) {
   function LeveledTitle(level, title) {
     switch (level) {
       case "h1":
@@ -21,9 +21,10 @@ export default function SectionHeader(props) {
     }
   }
   return (
-    <div className={classes.sectionHeader}>
+    <div className={classes.titleSection}>
       {LeveledTitle(props.level, props.title)}
-      <p className={classes.tagline}>{props.tagline}</p>
+      {props.tagline && 
+      <p className={classes.tagline}>{props.tagline}</p>}
       {props.children}
     </div>
   );

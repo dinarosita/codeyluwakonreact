@@ -3,5 +3,6 @@ pre.codeSnippet {
     padding: .5rem .5rem .25rem;
     color: chocolate;
     font-weight: normal;
-    margin-top: .25rem;
+    margin: .25rem 0;
+    width: fit-content;
 }

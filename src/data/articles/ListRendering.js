@@ -1,4 +1,6 @@
 import React from "react";
+import Article from "../../components/wrapper/Article";
+import fclasses from "../codes/Codes.module.css"
 
 export default function ListRendering() {
   const numbers = [1, 2, 3];
@@ -9,8 +11,7 @@ export default function ListRendering() {
 </ul>
 `;
   return (
-    <>
-      <h2>Generating List</h2>
+    <Article title="Generating List">
       <div>
         <p>
           Rendering multiple components for example from an array is a common
@@ -22,15 +23,15 @@ export default function ListRendering() {
       </div>
       <div>
         <p>Array</p>
-        <pre>{arrayText}</pre>
+        <pre className={fclasses.codebox}>{arrayText}</pre>
       </div>
       <div>
         <p>Listing</p>
-        <pre>{listingText}</pre>
+        <pre className={fclasses.codebox}>{listingText}</pre>
       </div>
       <div>
         <p>Result</p>
-        <pre>
+        <pre className={fclasses.codebox}>
           <p>Doubled numbers list</p>
           <ul>
             {numbers.map((number) => (
@@ -39,6 +40,6 @@ export default function ListRendering() {
           </ul>
         </pre>
       </div>
-    </>
+    </Article>
   );
 }

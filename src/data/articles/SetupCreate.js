@@ -1,4 +1,5 @@
 import React from "react";
+import Article from "../../components/wrapper/Article";
 
 export default function SetupCreate() {
   const text1 = String.raw`export default function App() {
@@ -14,8 +15,7 @@ import App from './App';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App />);`;
   return (
-    <>
-      <h2>Create React Project</h2>
+    <Article title="Create React Project">
       <div>
         <p>Terminal commands</p>
         <ul>
@@ -69,6 +69,6 @@ root.render(<App />);`;
           </li>
         </ul>
       </div>
-    </>
+    </Article>
   );
 }

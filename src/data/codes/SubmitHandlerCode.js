@@ -3,7 +3,7 @@ import classes from "./Codes.module.css"
 
 export default function SubmitHandlerCode() {
   return (
-    <pre>
+    <pre className={classes.codebox}>
           function meetupForm() {"{"}
           <pre className={classes.tab}>
             const <em>titleInputRef</em> = <em>useRef()</em>;<br />

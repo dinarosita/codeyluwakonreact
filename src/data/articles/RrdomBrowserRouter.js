@@ -1,4 +1,5 @@
 import React from "react";
+import Article from "../../components/wrapper/Article";
 
 export default function RrdomBrowserRouter() {
   const text1 = String.raw`import React from 'react';
@@ -15,13 +16,11 @@ root.render(
     </BrowserRouter>
 );`;
   return (
-    <>
-      <h2>React Router Dom: BrowserRouter Component</h2>
-
+    <Article title="React Router Dom: BrowserRouter Component">
       <div>
         <p>index.js</p>
         <pre>{text1}</pre>
       </div>
-    </>
+    </Article>
   );
 }

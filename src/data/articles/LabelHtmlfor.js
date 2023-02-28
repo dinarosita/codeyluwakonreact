@@ -1,13 +1,11 @@
 import React from "react";
+import Article from "../../components/wrapper/Article";
 import Formula from "../../components/wrapper/Formula";
-import SectionHeader from "../../components/wrapper/SectionHeader";
 
 export default function LabelHtmlfor() {
   return (
-    <>
-      <SectionHeader title="htmlFor" tagline="Property of label element">
-        <Formula>&lt;label htmlFor='someId'&gt;</Formula>
-      </SectionHeader>
+    <Article title="htmlFor" tagline="Property of label element">
+      <Formula>&lt;label htmlFor='someId'&gt;</Formula>
 
       <div>
         <p>
@@ -18,6 +16,6 @@ export default function LabelHtmlfor() {
         </p>
         <Formula>&lt;input type="text id='someId' /&gt;</Formula>
       </div>
-    </>
+    </Article>
   );
 }

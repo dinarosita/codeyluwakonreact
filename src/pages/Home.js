@@ -1,29 +1,24 @@
 import React from "react";
+import Page from "../components/wrapper/Page";
 import HomeAbout from "../data/articles/HomeAbout";
-import SectionLink from "../components/wrapper/SectionLinkInternal";
-import Section from "../components/wrapper/Section";
+import RedirectArticle from "../components/wrapper/RedirectArticle";
 
 export default function HomePage() {
   return (
-    <>
-      <h1>Welcome</h1>
-      <Section>
-        <HomeAbout />
-      </Section>
-       <SectionLink
-        url="https://dinarosita.github.io/codeyluwak/"
+    <Page title="Welcome" >
+      <HomeAbout />      
+       <RedirectArticle external
+        path="https://dinarosita.github.io/codeyluwak/"
         title="CodeyLuwak on Web Basics"
       />
-      <SectionLink
-        url="https://dinarosita.github.io/react-hooks/"
-        target="_blank"
-        rel="noopener noreferrer"
+      <RedirectArticle external
+        path="https://dinarosita.github.io/react-hooks/"
         title="CodeyLuwak on React Hooks"
       />
-      <SectionLink
-        url="https://dinarosita.github.io/react-meetups/"
+      <RedirectArticle external
+        path="https://dinarosita.github.io/react-meetups/"
         title="React Meetups &mdash; Udemy tutorial project"
       />
-    </>
+    </Page>
   );
 }

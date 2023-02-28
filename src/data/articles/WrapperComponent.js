@@ -1,12 +1,14 @@
 import React from "react";
+import Article from "../../components/wrapper/Article";
 import Formula from "../../components/wrapper/Formula";
-import SectionHeader from "../../components/wrapper/SectionHeader";
 
 export default function WrapperComponent() {
-  
   return (
-    <>
-      <SectionHeader title="Wrapper" tagline="Template component that makes applying style consistently easy"><Formula>&lt;Wrapper&gt;...Content...&lt;/Wrapper&gt;</Formula></SectionHeader>
+    <Article
+      title="Wrapper"
+      tagline="Template component that makes applying style consistently easy"
+    >
+      <Formula>&lt;Wrapper&gt;...Content...&lt;/Wrapper&gt;</Formula>
 
       <div>
         <h3>Wrapper concept</h3>
@@ -20,9 +22,11 @@ export default function WrapperComponent() {
 
       <div>
         <h3>Styling</h3>
-        <p>Include the specific styling to its <code>module.css</code> file.</p>
+        <p>
+          Include the specific styling to its <code>module.css</code> file.
+        </p>
         <Formula>Wrapper.module.css</Formula>
       </div>
-    </>
+    </Article>
   );
 }

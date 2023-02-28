@@ -1,0 +1,24 @@
+.titleSection h1,
+.titleSection h2,
+.titleSection h3,
+.titleSection h4,
+.titleSection h5,
+.titleSection h6 {
+  line-height: normal;
+}
+
+.titleSection h1,
+.titleSection h1 + .tagline {
+  margin-left: 0.75rem;
+}
+
+.titleSection .tagline {
+  font-size: large;
+  font-weight: bold;
+  color: rgb(157, 157, 4);
+}
+
+.tagline:before {
+  content: "\2023";
+  margin-right: 6px;
+}

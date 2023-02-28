@@ -1,9 +1,9 @@
 import React from "react";
+import Article from "../../components/wrapper/Article";
 
 export default function RrdomInstall() {
   return (
-    <>
-      <h2>Installing React Router Dom</h2>
+    <Article title="Installing React Router Dom">
       <div>
         <ul>
           <li>
@@ -34,6 +34,6 @@ export default function RrdomInstall() {
       <div>
         <p></p>
       </div>
-    </>
+    </Article>
   );
 }

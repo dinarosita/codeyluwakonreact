@@ -6,12 +6,20 @@
     align-items: left;
     background-color: olive;
     padding: 1rem 1rem .5rem;
+    border-radius: 5px;
+    padding: 0.5rem .25rem .75rem;
   }
   
   .logo {
     font-size: 2rem;
     color: white;
     font-weight: bold;
+    display: block;
+    width: fit-content;
+  }
+
+  .logo div {
+    font-size: 2rem;
   }
   
   .header ul {
@@ -19,7 +27,8 @@
     margin: 0;
     padding: 0;
     display: flex;
-    column-gap: 1.5rem;
+    column-gap: .5rem;
+    row-gap: .25rem;
     align-items: baseline;
     flex-wrap: wrap;
   }
@@ -32,18 +41,16 @@
     text-decoration: none;
     font-size: 1rem;
     color: white;
+    border: 1px solid olive;
+    border-radius: 10px;
+    padding: 0 .5rem;
   }
   
   .header a:hover,
   .header a:active,
   .header a.active {
-    color: white;
+    background-color: rgb(215, 215, 152)
+    ;
+    color: rgb(82, 82, 0);
   }
   
-  .badge {
-    background-color: #cc2062;
-    color: white;
-    border-radius: 12px;
-    padding: 0 1rem;
-    margin-left: 0.5rem;
-  }

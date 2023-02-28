@@ -1,9 +1,9 @@
 import React from "react";
+import Article from "../../components/wrapper/Article";
 
 export default function GithubTerminal() {
   return (
-    <>
-      <h2>Update Github</h2>
+    <Article title="Update Github">
       <div>
         <p>Update repo:</p>
         <ul>
@@ -28,6 +28,6 @@ export default function GithubTerminal() {
           </li>
         </ul>
       </div>
-    </>
+    </Article>
   );
 }

@@ -1,7 +1,8 @@
 import React from "react";
+import Article from "../../components/wrapper/Article";
 
 export default function RrdomLink() {
-    const text1 = String.raw`import { Link } from "react-router-dom";
+  const text1 = String.raw`import { Link } from "react-router-dom";
 ...
 
 export default function MainNavigation() {
@@ -17,11 +18,9 @@ export default function MainNavigation() {
       </ul>
     </nav>
   );
-}`
+}`;
   return (
-    <>
-      <h2>React Router Dom: Link Component</h2>
-
+    <Article title="React Router Dom: Link Component">
       <div>
         <p>MainNavigation.js</p>
         <pre>{text1}</pre>
@@ -79,6 +78,6 @@ export default function MainNavigation() {
           </li>
         </ul>
       </div>
-    </>
+    </Article>
   );
 }

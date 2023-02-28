@@ -1,9 +1,9 @@
 import React from "react";
+import Article from "../../components/wrapper/Article";
 
 export default function SetupInstall() {
   return (
-    <>
-      <h2>Installation</h2>
+    <Article title="Installation">
       <div>
         <p>NodeJS</p>
         <ul>
@@ -26,6 +26,6 @@ export default function SetupInstall() {
           </li>
         </ul>
       </div>
-    </>
+    </Article>
   );
 }

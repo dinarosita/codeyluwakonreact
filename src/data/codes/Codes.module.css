@@ -1,3 +1,13 @@
+pre.codebox {
+    border: 2px solid palegoldenrod;
+    border-radius: 6px;
+    padding: 0.5rem;
+    display: block;
+    width: fit-content;
+    margin: 0.25rem 0 0.5rem -0.25rem;
+    line-height: 150%;
+  }
+
 pre.tab {
     margin: 0;
     padding: 0;
@@ -11,3 +21,4 @@ pre.comment {
     border: none;
     color: olive;
 }
+

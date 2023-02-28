@@ -1,16 +1,13 @@
 import React from "react";
+import Page from "../components/wrapper/Page";
 import LabelHtmlfor from "../data/articles/LabelHtmlfor";
-import Section from "../components/wrapper/Section";
-import SectionLinkInternal from "../components/wrapper/SectionLinkInternal";
+import RedirectArticle from "../components/wrapper/RedirectArticle";
 
 export default function FormPage() {
   return (
-    <>
-      <h1>Form</h1>
-      <SectionLinkInternal toPath="./form-submit" title="Form Submission" />
-      <Section>
-        <LabelHtmlfor />
-      </Section>
-    </>
+    <Page title="Form">
+      <RedirectArticle path="./form-submit" title="Form Submission" />
+      <LabelHtmlfor />
+    </Page>
   );
 }

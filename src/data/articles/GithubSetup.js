@@ -1,9 +1,9 @@
 import React from "react";
+import Article from "../../components/wrapper/Article";
 
 export default function GithubSetup() {
   return (
-    <>
-      <h2>Github and Local Repo</h2>
+    <Article title="Github and Local Repo">
       <div>
         <p>Github</p>
         <ul>
@@ -77,6 +77,6 @@ export default function GithubSetup() {
           </li>
         </ul>
       </div>
-    </>
+    </Article>
   );
 }

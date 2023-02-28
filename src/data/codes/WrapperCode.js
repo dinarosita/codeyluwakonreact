@@ -3,7 +3,7 @@ import classes from "./Codes.module.css"
 
 export default function WrapperCode() {
   return (
-    <pre>
+    <pre className={classes.codebox}>
         import classes from "./Wrapper.module.css"<br />
         <br />
         function <em>Wrapper</em>(<em>props</em>) {"{"}

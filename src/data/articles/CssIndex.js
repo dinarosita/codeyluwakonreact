@@ -1,11 +1,10 @@
 import React from "react";
+import Article from "../../components/wrapper/Article";
 import Formula from "../../components/wrapper/Formula";
-import SectionHeader from "../../components/wrapper/SectionHeader";
 
 export default function CssIndex() {
   return (
-    <>
-      <SectionHeader title="index.css"></SectionHeader>
+    <Article title="Index CSS" tagline="Global styling">
       <div>
         <p>
           By default, React generates <code>index.css</code> and{" "}
@@ -18,9 +17,10 @@ export default function CssIndex() {
           components, while I use <code>index.css</code> to code the site's
           overall styling.
         </p>
-
+      </div>
+      <div>
         <Formula>index.css</Formula>
       </div>
-    </>
+    </Article>
   );
 }

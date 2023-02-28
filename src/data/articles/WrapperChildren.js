@@ -1,14 +1,14 @@
 import React from "react";
+import Article from "../../components/wrapper/Article";
 import Formula from "../../components/wrapper/Formula";
-import SectionHeader from "../../components/wrapper/SectionHeader";
 import WrapperCode from "../codes/WrapperCode";
 
 export default function WrapperChildren() {
   return (
-    <>
-      <SectionHeader title="children" tagline="Important property for wrappers">
-        <Formula>{"{"}props.children{"}"}</Formula>
-      </SectionHeader>
+    <Article title="children" tagline="Important property for wrappers">
+      <Formula>
+        {"{"}props.children{"}"}
+      </Formula>
 
       <div>
         <p>
@@ -22,8 +22,8 @@ export default function WrapperChildren() {
 
       <div>
         <h3>Wrapper.js</h3>
-        <WrapperCode />        
+        <WrapperCode />
       </div>
-    </>
+    </Article>
   );
 }

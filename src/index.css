@@ -5,45 +5,56 @@
 }
 
 body {
-  font-family: Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-    sans-serif;
-  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* margin: 0.5rem; */
   color: rgb(88, 88, 0);
-  line-height: 1.5rem;
+  line-height: 150%;
 }
 
 code,
 pre {
   font-family: Courier New, Courier, monospace;
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: steelblue;
   line-height: 1.2rem;
 }
 
-ul {
-    padding-left: 2.5rem;    
-    list-style: none;
-}
-
-ul li::before {
-    content: "\2022";
-    color: olive;
-    font-weight: bold;
-    display: inline-block;
-    width: 1.25rem;
-    margin-left: -1.25rem;
-}
-
 em {
-    font-style: normal;
-    color: indianred
+  font-style: normal;
+  color: indianred;
 }
 
 strong {
-    font-weight: bold;
-    color:olive
+  font-weight: bold;
+  color: olive;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+  color:palevioletred
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 200%;
+  color: olive;
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+h2 {
+  font-size: x-large;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-size: larger;
 }

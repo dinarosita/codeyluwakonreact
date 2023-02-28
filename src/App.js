@@ -4,7 +4,6 @@ import WrapperPage from "./pages/Wrapper";
 import HookPage from "./pages/Hook";
 import Layout from "./components/layout/Layout";
 import TerminalPage from "./pages/Terminal";
-import RoutingPage from "./pages/Rrdom";
 import HomePage from "./pages/Home";
 import PropertiesPage from "./pages/Properties";
 import ListingPage from "./pages/Listing";
@@ -12,13 +11,22 @@ import CssPage from "./pages/Css";
 import FormPage from "./pages/Form";
 import GithubPage from "./pages/Github";
 import FormSubmitPage from "./pages/FormSubmit";
+import FirebasePage from "./pages/Firebase";
+import RrdomPage from "./pages/Rrdom";
+import HttpRequestPage from "./pages/HttpRequest";
 
 function App() {
   return (
     <Layout>
       <Switch>
+        <Route path="/firebase">
+          <FirebasePage />
+        </Route>
         <Route path="/css">
           <CssPage />
+        </Route>
+        <Route path="/firebase">
+          <FirebasePage />
         </Route>
         <Route path="/form">
           <FormPage />
@@ -35,6 +43,9 @@ function App() {
         <Route path="/hook">
           <HookPage />
         </Route>
+        <Route path="/httprequest">
+            <HttpRequestPage />
+        </Route>
         <Route path="/listing">
           <ListingPage />
         </Route>
@@ -42,7 +53,7 @@ function App() {
           <PropertiesPage />
         </Route>
         <Route path="/rrdom">
-          <RoutingPage />
+          <RrdomPage />
         </Route>
         <Route path="/setup">
           <SetupPage />
@@ -50,11 +61,9 @@ function App() {
         <Route path="/terminal">
           <TerminalPage />
         </Route>
-
         <Route path="/wrapper">
           <WrapperPage />
         </Route>
-
         <Route path="/">
           <Redirect to="/home" />
         </Route>

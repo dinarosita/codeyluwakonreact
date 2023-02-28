@@ -1,15 +1,15 @@
 import React from "react";
-import CodeSnippet from "../../components/wrapper/CodeSnippet";
+import Article from "../../components/wrapper/Article";
 import Formula from "../../components/wrapper/Formula";
-import SectionHeader from "../../components/wrapper/SectionHeader";
+import CodeSnippet from "../../components/wrapper/CodeSnippet";
 import SubmitHandlerCode from "../codes/SubmitHandlerCode";
 
 export default function FormRef() {
   return (
-    <>
-      <SectionHeader title="Ref" tagline="Built-in property of form elements">
+    <Article title="Ref" tagline="Built-in property of form elements">
+      <div>
         <Formula>&lt;input ... ref={"{someRef}"}&gt;</Formula>
-      </SectionHeader>
+      </div>
 
       <div>
         <h3>Reference concept</h3>
@@ -55,6 +55,6 @@ export default function FormRef() {
         <h3>Overall code</h3>
         <SubmitHandlerCode />
       </div>
-    </>
+    </Article>
   );
 }
