@@ -6,16 +6,8 @@ export default function FetchUrl() {
   return (
     <Article title="First argument: URL">
       <CodeSnippet>
-        fetch(
-        <pre className="tab">
-          <em>
             'https://react-meetup-6b19e-default-rtdb.firebaseio.com/
-            <b>meetups.json</b>'
-          </em>
-          , <br />
-          {"{"}...{"}"}
-        </pre>
-        )
+            <em>meetups.json</em>'
       </CodeSnippet>
       <div>
         <h3>Composing HTTP request URL</h3>

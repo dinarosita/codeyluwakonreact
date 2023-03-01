@@ -33,6 +33,7 @@ em {
 
 strong {
   font-weight: bold;
+  color: olive
 }
 
 a {
@@ -76,4 +77,25 @@ pre.tab {
     margin-left: 1.5rem;
     border: none;
     color: inherit;
+}
+
+pre.codebox {
+    border: 2px solid palegoldenrod;
+    border-radius: 6px;
+    padding: 0.5rem;
+    display: block;
+    width: fit-content;
+    margin: 0.25rem 0 0.5rem -0.25rem;
+    line-height: 150%;
+  }
+
+pre.comment {
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: olive;
+}
+
+span.comment {
+    color: olive;
 }

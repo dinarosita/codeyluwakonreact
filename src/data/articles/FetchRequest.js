@@ -6,25 +6,17 @@ export default function FetchRequest() {
   return (
     <Article title="Second argument: Request">
       <CodeSnippet>
-        fetch(
+        {"{"}
         <pre className="tab">
-          'https://react-meetup-6b19e-default-rtdb.firebaseio.com/
-          meetups.json', <br />
-          <em>
-            {"{"}
-            <pre className="tab">
-              method: "POST",
-              <br />
-              body: JSON.stringify(meetupData),
-              <br />
-              headers: {"{"}
-              <pre className="tab">"Content-Type": "application/json"</pre>
-              {"}"}
-            </pre>
-            {"}"}
-          </em>
+          method: <em>"POST"</em>,
+          <br />
+          body: <em>JSON.stringify(meetupData)</em>,
+          <br />
+          headers: {"{"}
+          <pre className="tab"><em>"Content-Type": "application/json"</em></pre>
+          {"}"}
         </pre>
-        )
+        {"}"}
       </CodeSnippet>
       <div>
         <h4>Properties</h4>
