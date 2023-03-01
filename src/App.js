@@ -13,6 +13,7 @@ import GithubPage from "./pages/Github";
 import FormSubmitPage from "./pages/FormSubmit";
 import FirebasePage from "./pages/Firebase";
 import RrdomPage from "./pages/Rrdom";
+import FetchPage from "./pages/Fetch";
 import HttpRequestPage from "./pages/HttpRequest";
 
 function App() {
@@ -24,6 +25,9 @@ function App() {
         </Route>
         <Route path="/css">
           <CssPage />
+        </Route>
+        <Route path="/fetch">
+            <FetchPage />
         </Route>
         <Route path="/firebase">
           <FirebasePage />

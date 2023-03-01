@@ -16,9 +16,15 @@
   font-size: large;
   font-weight: bold;
   color: rgb(157, 157, 4);
+  margin-top: 0.2rem;
 }
 
 .tagline:before {
   content: "\2023";
-  margin-right: 6px;
+  margin-right: 0.5rem;
+}
+
+.titleSection .h5 .tagline,
+.titleSection .h6 .tagline {
+  font-size: medium;
 }

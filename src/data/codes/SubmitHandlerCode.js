@@ -5,11 +5,11 @@ export default function SubmitHandlerCode() {
   return (
     <pre className={classes.codebox}>
           function meetupForm() {"{"}
-          <pre className={classes.tab}>
+          <pre className="tab">
             const <em>titleInputRef</em> = <em>useRef()</em>;<br />
             <br />
             function <em>submitHandler</em>(event) {"{"}
-            <pre className={classes.tab}>
+            <pre className="tab">
               event.preventDefault();
               <br />
               const <em>enteredTitle</em> = <em>titleInputRef.current.value</em>
@@ -19,13 +19,13 @@ export default function SubmitHandlerCode() {
             <br />
             <br />
             return {"{"}
-            <pre className={classes.tab}>
+            <pre className="tab">
               <em>&lt;form</em>{" "}
               <em>
                 onSubmit={"{"}submitHandler{"}"}
                 &gt;
               </em>
-              <pre className={classes.tab}>
+              <pre className="tab">
                 &lt;label htmlFor="title"&gt;Meetup Title&lt;/label&gt;
                 <br />
                 <em>&lt;input</em> type="text" required id="title"{" "}

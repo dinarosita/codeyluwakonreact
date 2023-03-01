@@ -7,11 +7,11 @@ export default function WrapperCode() {
         import classes from "./Wrapper.module.css"<br />
         <br />
         function <em>Wrapper</em>(<em>props</em>) {"{"}
-        <pre className={classes.tab}>
+        <pre className="tab">
             return (
-            <pre className={classes.tab}>
+            <pre className="tab">
                 &lt;div className={"{"}classes.wrapdiv{"}"}&gt;
-                <pre className={classes.tab}>
+                <pre className="tab">
                     <em>{"{"}props.children{"}"}</em>
                 </pre>
                 &lt;/div&gt;

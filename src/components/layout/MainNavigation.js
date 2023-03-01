@@ -14,6 +14,9 @@ export default function MainNavigation() {
             <Link to="/css">CSS</Link>
           </li>
           <li>
+            <Link to="/fetch">Fetch</Link>
+          </li>
+          <li>
             <Link to="/firebase">Firebase</Link>
           </li>
           <li>

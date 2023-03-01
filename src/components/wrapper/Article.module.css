@@ -12,28 +12,17 @@
 }
 
 .article > div > p + p {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
-
-/* .article h2 {
-  color: olive;
-  font-size: x-large;
-} */
-
-/* .article h3 {
-  color: olive;
-  font-size: large;
-} */
-
-/* .article h2,
-.article h3,
-.article h4,
-.article h5,
-.article h6 {
-  margin-bottom: 1.25rem;
-} */
 
 .article ul {
   list-style: circle;
   padding-left: 2rem;
+}
+
+ul h3,
+ul h4,
+ul h5,
+ul h6 {
+    line-height: 200%;
 }

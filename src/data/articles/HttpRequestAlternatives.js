@@ -1,16 +1,18 @@
 import React from "react";
 import Article from "../../components/wrapper/Article";
+import Formula from "../../components/wrapper/Formula";
 
 export default function HttpRequestAlternatives() {
   return (
-    <Article title="Alternative ways to send HTTP requests">
+    <Article title="Alternatives for http request">
       <div>
-        <h3>JavaScript</h3>
+        <h3>JavaScript's fetch</h3>
         <p>
           Standard JavaScript has a built-in function called{" "}
           <code>fetch()</code> that is for sending http requests. Supported by
           modern browsers.
         </p>
+        <Formula>fetch()</Formula>
       </div>
       <div>
         <h3>Axios and other third party packages</h3>

@@ -7,3 +7,7 @@ pre.formula {
     width: fit-content;
     margin: .25rem 0;
 }
+
+.formula em {
+    color: rgb(205, 118, 205);
+}

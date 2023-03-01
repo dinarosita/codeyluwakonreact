@@ -1,13 +1,15 @@
 import React from 'react'
 import Page from '../components/wrapper/Page'
 import HttpRequestAlternatives from '../data/articles/HttpRequestAlternatives'
-import HttpRequestFetch from '../data/articles/HttpRequestFetch'
+import RedirectArticle from '../components/wrapper/RedirectArticle'
+import HttpRequestJson from '../data/articles/HttpRequestJson'
 
 export default function HttpRequestPage() {
   return (
-    <Page title="HTTP Request">
+    <Page title="HTTP Request" >
         <HttpRequestAlternatives />
-        <HttpRequestFetch />
+        <HttpRequestJson />
+        <RedirectArticle title="Fetch" path="/fetch" />
     </Page>
   )
 }

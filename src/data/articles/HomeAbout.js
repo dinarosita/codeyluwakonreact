@@ -4,7 +4,7 @@ import Article from "../../components/wrapper/Article";
 
 export default function HomeAbout() {
   return (
-    <Article title="About">
+    <Article title="About CodeyLuwak on React">
       <div>
         <p>
           CodeyLuwak on React houses my notes when learning React JS. Navigate
@@ -13,7 +13,7 @@ export default function HomeAbout() {
       </div>
 
       <div>
-        <p>Main tutorials:</p>
+        <p>Main tutorials I follow:</p>
         <ul>
           <li>
             {" "}

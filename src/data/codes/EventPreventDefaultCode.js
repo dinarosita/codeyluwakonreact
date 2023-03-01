@@ -5,7 +5,7 @@ export default function EventPreventDefault() {
   return (
     <pre className={classes.codebox}>
       function <em>submitHandler</em>(<em>event</em>) {"{"}
-      <pre className={classes.tab}>
+      <pre className="tab">
         <em>event.preventDefault()</em>;<br />
         <pre className={classes.comment}>codes...</pre>
       </pre>

@@ -8,13 +8,6 @@ pre.codebox {
     line-height: 150%;
   }
 
-pre.tab {
-    margin: 0;
-    padding: 0;
-    margin-left: 1.5rem;
-    border: none;
-}
-
 pre.comment {
     margin: 0;
     padding: 0;

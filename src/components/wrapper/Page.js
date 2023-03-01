@@ -4,7 +4,7 @@ import TitleSection from "./TitleSection";
 
 export default function Page(props) {
   return (
-    <article className={classes.page}>
+    <div className={classes.page}>
       <TitleSection
         className={classes.title}
         level="h1"
@@ -12,6 +12,6 @@ export default function Page(props) {
         tagline={props.tagline}
       />
       {props.children}
-    </article>
+    </div>
   );
 }
