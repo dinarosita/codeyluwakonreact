@@ -15,6 +15,9 @@ import FirebasePage from "./pages/Firebase";
 import RrdomPage from "./pages/Rrdom";
 import FetchPage from "./pages/Fetch";
 import HttpRequestPage from "./pages/HttpRequest";
+import FetchGetPage from "./pages/FetchGet";
+import FetchPostPage from "./pages/FetchPost";
+import UsecontextPage from "./pages/Usecontext";
 
 function App() {
   return (
@@ -27,7 +30,13 @@ function App() {
           <CssPage />
         </Route>
         <Route path="/fetch">
-            <FetchPage />
+          <FetchPage />
+        </Route>
+        <Route path="/fetchget">
+          <FetchGetPage />
+        </Route>
+        <Route path="/fetchpost">
+          <FetchPostPage />
         </Route>
         <Route path="/firebase">
           <FirebasePage />
@@ -38,6 +47,7 @@ function App() {
         <Route path="/form-submit">
           <FormSubmitPage />
         </Route>
+
         <Route path="/github">
           <GithubPage />
         </Route>
@@ -48,7 +58,7 @@ function App() {
           <HookPage />
         </Route>
         <Route path="/httprequest">
-            <HttpRequestPage />
+          <HttpRequestPage />
         </Route>
         <Route path="/listing">
           <ListingPage />
@@ -64,6 +74,9 @@ function App() {
         </Route>
         <Route path="/terminal">
           <TerminalPage />
+        </Route>
+        <Route path="/usecontext">
+          <UsecontextPage />
         </Route>
         <Route path="/wrapper">
           <WrapperPage />

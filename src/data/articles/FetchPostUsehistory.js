@@ -3,11 +3,11 @@ import Article from "../../components/wrapper/Article";
 import CodeSnippet from "../../components/wrapper/CodeSnippet";
 import FetchThenUsehistoryCode from "../codes/FetchThenUsehistoryCode";
 
-export default function FetchUsehistory() {
+export default function FetchPostUsehistory() {
   return (
     <Article
-      title="Fetch Then UseHistory"
-      tagline="Navigate programatically with useHistory hook"
+      title="UseHistory"
+      tagline="Signalling user submission is complete using useHistory to navigate away"
     >
       <div>
         <h3>Hook useHistory for navigating away upon fetch completion</h3>

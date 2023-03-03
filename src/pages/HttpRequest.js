@@ -10,6 +10,8 @@ export default function HttpRequestPage() {
         <HttpRequestAlternatives />
         <HttpRequestJson />
         <RedirectArticle title="Fetch" path="/fetch" />
+        <RedirectArticle title="Get Request" path="/fetchget" />
+        <RedirectArticle title="Post Request" path="/fetchpost" />
     </Page>
   )
 }

@@ -17,7 +17,6 @@ export default function FetchThen() {
           happen next.
         </p>
       </div>
-
     </Article>
   );
 }
