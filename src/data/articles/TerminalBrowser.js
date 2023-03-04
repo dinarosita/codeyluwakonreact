@@ -1,5 +1,5 @@
 import React from "react";
-import Article from "../../components/wrapper/Article";
+import Article from "../../components/wrappers/Article";
 
 export default function TerminalBrowser() {
   return (

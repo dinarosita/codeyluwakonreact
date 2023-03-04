@@ -1,18 +1,19 @@
 import React from "react";
-import classes from "./Codes.module.css";
+import Codebox from "../../components/codeWrappers/boxes/Codebox"
+import Tab from "../../components/codeWrappers/boxes/Tab"
 
 export default function KeyIdCode() {
   return (
-    <pre className={classes.codebox}>
+    <Codebox>
         const todoItems = todos.map((todo) =&gt;
-        <pre className="tab">
+        <Tab>
             &lt;li key={"{"}todo.id{"}"}&gt;
-            <pre className="tab">
+            <Tab>
                 {"{"}todo.text{"}"}
-            </pre>
+            </Tab>
             &lt;/li&gt;
-        </pre>
+        </Tab>
         );
-    </pre>
+    </Codebox>
   );
 }

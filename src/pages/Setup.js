@@ -1,5 +1,5 @@
 import React from "react";
-import Page from "../components/wrapper/Page";
+import Page from "../components/wrappers/Page";
 import SetupInstall from "../data/articles/SetupInstall";
 import SetupCreate from "../data/articles/SetupCreate";
 import GithubSetup from "../data/articles/GithubSetup";

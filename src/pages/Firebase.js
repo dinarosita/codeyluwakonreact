@@ -1,5 +1,5 @@
 import React from "react";
-import Page from "../components/wrapper/Page";
+import Page from "../components/wrappers/Page";
 import FirebaseIntro from "../data/articles/FirebaseIntro";
 import FirebaseStartup from "../data/articles/FirebaseStartup";
 

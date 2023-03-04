@@ -1,8 +1,9 @@
 import { Redirect, Route, Switch } from "react-router-dom";
+import Layout from "./components/layout/Layout";
+
 import SetupPage from "./pages/Setup";
 import WrapperPage from "./pages/Wrapper";
 import HookPage from "./pages/Hook";
-import Layout from "./components/layout/Layout";
 import TerminalPage from "./pages/Terminal";
 import HomePage from "./pages/Home";
 import PropertiesPage from "./pages/Properties";
@@ -17,14 +18,14 @@ import FetchPage from "./pages/Fetch";
 import HttpRequestPage from "./pages/HttpRequest";
 import FetchGetPage from "./pages/FetchGet";
 import FetchPostPage from "./pages/FetchPost";
-import UsecontextPage from "./pages/Usecontext";
+import ContextPage from "./pages/Context";
 
 function App() {
   return (
     <Layout>
       <Switch>
-        <Route path="/firebase">
-          <FirebasePage />
+        <Route path="/context">
+          <ContextPage />
         </Route>
         <Route path="/css">
           <CssPage />
@@ -75,9 +76,7 @@ function App() {
         <Route path="/terminal">
           <TerminalPage />
         </Route>
-        <Route path="/usecontext">
-          <UsecontextPage />
-        </Route>
+
         <Route path="/wrapper">
           <WrapperPage />
         </Route>

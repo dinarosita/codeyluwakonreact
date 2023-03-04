@@ -1,5 +1,6 @@
 import React from "react";
-import Article from "../../components/wrapper/Article";
+import Article from "../../components/wrappers/Article";
+import Codebox from "../../components/codeWrappers/boxes/Codebox"
 
 export default function RrdomBrowserRouter() {
   const text1 = String.raw`import React from 'react';
@@ -19,7 +20,7 @@ root.render(
     <Article title="React Router Dom: BrowserRouter Component">
       <div>
         <p>index.js</p>
-        <pre>{text1}</pre>
+        <Codebox>{text1}</Codebox>
       </div>
     </Article>
   );

@@ -1,0 +1,33 @@
+span.comment {
+  color: olive;
+}
+
+span.attn {
+  color: indianred;
+  font-weight: bold;
+}
+
+span.var {
+  color: mediumorchid;
+  font-weight: normal;
+}
+
+span.var2 {
+    color: green;
+    font-weight: normal;
+  }
+
+span.val{
+    color: rebeccapurple;
+    font-weight: normal;
+  }
+
+span.block {
+  color: olive;
+  font-weight: normal;
+}
+
+span.fn {
+    color: chocolate;
+    font-weight: normal;
+  }

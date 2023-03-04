@@ -1,6 +1,6 @@
 import React from "react";
-import Article from "../../components/wrapper/Article";
-import CodeSnippet from "../../components/wrapper/CodeSnippet";
+import Article from "../../components/wrappers/Article";
+import CodeSnippet from "../../components/codeWrappers/boxes/Snippet";
 import FetchThenUsehistoryCode from "../codes/FetchThenUsehistoryCode";
 
 export default function FetchPostUsehistory() {

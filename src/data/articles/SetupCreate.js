@@ -1,5 +1,6 @@
 import React from "react";
-import Article from "../../components/wrapper/Article";
+import Article from "../../components/wrappers/Article";
+import Codebox from "../../components/codeWrappers/boxes/Codebox"
 
 export default function SetupCreate() {
   const text1 = String.raw`export default function App() {
@@ -53,13 +54,13 @@ root.render(<App />);`;
             <code>
               <em>App.js</em>
             </code>
-            <pre>{text1}</pre>
+            <Codebox>{text1}</Codebox>
           </li>
           <li>
             <code>
               <em>index.js</em>
             </code>
-            <pre>{text2}</pre>
+            <Codebox>{text2}</Codebox>
           </li>
           <li>
             <code>

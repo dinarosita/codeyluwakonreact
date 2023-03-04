@@ -1,0 +1,8 @@
+.demobox {
+  border: 1px solid brown;
+  width: fit-content;
+}
+
+.demobox > * {
+    padding: 1rem;
+}

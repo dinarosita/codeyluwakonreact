@@ -1,5 +1,7 @@
 import React from "react";
-import Article from "../../components/wrapper/Article";
+import Article from "../../components/wrappers/Article";
+import Codebox from "../../components/codeWrappers/boxes/Codebox"
+import Tab from "../../components/codeWrappers/boxes/Tab"
 
 export default function FetchGetCode() {
   return (
@@ -7,72 +9,72 @@ export default function FetchGetCode() {
       title="Fetch GET code"
       tagline="Code for Fetching and displaying data from database"
     >
-      <pre className="codebox">
+      <Codebox>
         function AllMeetupPage(){"{"}
-        <pre className="tab">
+        <Tab>
           const [isLoading, setIsLoading] = useState(true);
           <br />
           const [loadedMeetups, setLoadedMeetups] = useState([]);
           <br />
           <br />
           useEffect(() => {"{"}
-          <pre className="tab">
+          <Tab>
             setIsLoading(true);
             <br />
             fetch(
-            <pre className="tab">
+            <Tab>
               "https://react-meetup-6b19e-default-rtdb.firebaseio.com/meetups.json"
-            </pre>
+            </Tab>
             ).then(response => {"{"}
-            <pre className="tab">return response.json();</pre>
+            <Tab>return response.json();</Tab>
             {"}"}).then(data => {"{"}
-            <pre className="tab">
+            <Tab>
               const meetups = [];
               <br />
               <br />
               for (const key in data) {"{"}
-              <pre className="tab">
+              <Tab>
                 const meetup = {"{"}
-                <pre className="tab">
+                <Tab>
                   id: key,
                   <br />
                   ...data[key]
-                </pre>
+                </Tab>
                 {"}"}
                 <br />
                 meetups.push(meetup);
-              </pre>
+              </Tab>
               {"}"}
               <br />
               <br />
               setIsLoading(false);
               <br />
               setLoadedMeetups(meetups);
-            </pre>
+            </Tab>
             {"}"})
-          </pre>
+          </Tab>
           {"}"}, [])
           <br />
           <br />
           if (isLoading) {"{"}
-          <pre className="tab">&lt;section&gt;Loading...&lt;/section&gt;</pre>
+          <Tab>&lt;section&gt;Loading...&lt;/section&gt;</Tab>
           {"}"}
           <br />
           <br />
           return (
-          <pre className="tab">
+          <Tab>
             &lt;section&gt;
-            <pre className="tab">
+            <Tab>
               &lt;h1&gt;All Meetup Page&lt;/h1&gt;
               <br />
               &lt;MeetupList meetups={"{"}loadedMeetups{"}"} /&gt;
-            </pre>
+            </Tab>
             &lt;/section&gt;
-          </pre>
+          </Tab>
           )
-        </pre>
+        </Tab>
         {"}"}
-      </pre>
+      </Codebox>
     </Article>
   );
 }

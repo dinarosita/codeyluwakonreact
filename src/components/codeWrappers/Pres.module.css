@@ -1,0 +1,49 @@
+.codebox {
+  border: 2px solid palegoldenrod;
+  border-radius: 6px;
+  padding: 0.5rem;
+  display: block;
+  width: fit-content;
+  margin: 0.25rem 0 0.5rem -0.25rem;
+  line-height: 150%;
+  overflow: auto;
+}
+
+.tab {
+  margin: 0;
+  padding: 0;
+  margin-left: 1.5rem;
+  border: none;
+  color: inherit;
+}
+
+.snippet {
+  border: 1px solid darksalmon;
+  padding: 0.5rem 0.5rem 0.25rem;
+  color: chocolate;
+  font-weight: normal;
+  margin: 0.25rem 0;
+  width: fit-content;
+}
+
+.formula {
+  border: 2px solid darksalmon;
+  padding: 0.5rem 0.5rem 0.25rem;
+  color: darksalmon;
+  font-weight: bold;
+  display: block;
+  width: fit-content;
+  margin: 0.25rem 0 0.5rem;
+}
+
+.title{
+    color:darksalmon;
+    font-weight: bold;
+    margin-top: .25rem;
+    margin-bottom: 0;
+}
+
+.title + pre,
+.title + div {
+    margin-top: 0;
+}

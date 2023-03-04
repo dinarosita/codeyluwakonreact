@@ -1,5 +1,5 @@
 import React from "react";
-import Page from "../components/wrapper/Page";
+import Page from "../components/wrappers/Page";
 import LabelHtmlfor from "../data/articles/LabelHtmlfor";
 import ListKey from "../data/articles/ListKey";
 import WrapperChildren from "../data/articles/WrapperChildren";

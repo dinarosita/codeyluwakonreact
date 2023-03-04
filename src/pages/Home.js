@@ -1,8 +1,8 @@
 import React from "react";
-import Page from "../components/wrapper/Page";
+import Page from "../components/wrappers/Page";
 import HomeAbout from "../data/articles/HomeAbout";
-import RedirectArticle from "../components/wrapper/RedirectArticle";
-import Article from "../components/wrapper/Article";
+import RedirectArticle from "../components/wrappers/RedirectArticle";
+import Article from "../components/wrappers/Article";
 
 export default function HomePage() {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
-import Article from "../../components/wrapper/Article";
-import ANew from "../../components/wrapper/ANew";
+import Article from "../../components/wrappers/Article";
+import ANew from "../../components/wrappers/ANew";
 
 export default function FirebaseStartup() {
   return (

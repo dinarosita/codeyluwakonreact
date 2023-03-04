@@ -1,6 +1,10 @@
 import React from "react";
-import Article from "../../components/wrapper/Article";
-import Formula from "../../components/wrapper/Formula";
+import Article from "../../components/wrappers/Article";
+import Formula from "../../components/codeWrappers/boxes/Formula";
+import Codebox from "../../components/codeWrappers/boxes/Codebox";
+import Tab from "../../components/codeWrappers/boxes/Tab";
+
+
 
 export default function FetchGetHooks() {
   return (
@@ -32,27 +36,27 @@ export default function FetchGetHooks() {
               retrieval, this placeholder will house the data.
             </li>
           </ul>
-          <pre className="codebox">
+          <Codebox>
             const [isLoading, setIsLoading] = useState(true);
             <br />
             const [loadedMeetups, setLoadedMeetups] = useState([]);
-          </pre>
+          </Codebox>
 
-          <pre className="codebox">
+          <Codebox>
             .then(data => {"{"}
-            <pre className="tab">
+            <Tab>
               setIsLoading(false);
               <br />
               setLoadedMeetups(data);
-            </pre>
+            </Tab>
             {"}"})
-          </pre>
+          </Codebox>
 
-          <pre className="codebox">
+          <Codebox>
             if (isLoading) {"{"}
-            <pre className="tab">&lt;section&gt;Loading...&lt;/section&gt;</pre>
+            <Tab>&lt;section&gt;Loading...&lt;/section&gt;</Tab>
             {"}"}
-          </pre>
+          </Codebox>
         </div>
         <div>
           <h3>UseEffect to prevent infinite loop</h3>
@@ -102,12 +106,15 @@ export default function FetchGetHooks() {
             in the beginning. Then when the data resolved, it will be displayed,
             and the change in state doesn't trigger subsequent fetching.
           </p>
-          <pre className="codebox">
+          <Codebox>
             useEffect(() => {"{"}
-            <pre className="tab">setIsLoaded(true);<br/>
-            fetch().then().then()</pre>
+            <Tab>
+              setIsLoaded(true);
+              <br />
+              fetch().then().then()
+            </Tab>
             {"}"}, [])
-          </pre>
+          </Codebox>
         </div>
       </Article>
     </>

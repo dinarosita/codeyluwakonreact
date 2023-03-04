@@ -1,7 +1,7 @@
 import React from "react";
-import Page from "../components/wrapper/Page";
+import Page from "../components/wrappers/Page";
 import LabelHtmlfor from "../data/articles/LabelHtmlfor";
-import RedirectArticle from "../components/wrapper/RedirectArticle";
+import RedirectArticle from "../components/wrappers/RedirectArticle";
 
 export default function FormPage() {
   return (

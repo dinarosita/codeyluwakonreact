@@ -11,7 +11,8 @@
   margin: 0;
 }
 
-.article > div > p + p {
+.article > div > p + p,
+.article > div > ul + p {
   margin-top: 1rem;
 }
 

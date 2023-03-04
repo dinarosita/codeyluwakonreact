@@ -1,6 +1,6 @@
 import React from "react";
-import Article from "../../components/wrapper/Article";
-import Formula from "../../components/wrapper/Formula";
+import Article from "../../components/wrappers/Article";
+import Formula from "../../components/codeWrappers/boxes/Formula";
 import EventPreventDefault from "../codes/EventPreventDefaultCode";
 
 export default function FormPreventDefault() {

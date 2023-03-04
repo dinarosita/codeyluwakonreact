@@ -1,5 +1,6 @@
 import React from "react";
-import Article from "../../components/wrapper/Article";
+import Article from "../../components/wrappers/Article";
+import Codebox from "../../components/codeWrappers/boxes/Codebox"
 
 export default function WrapperUsage() {
   const childElement = String.raw`<Wrapper>
@@ -15,17 +16,17 @@ export default function WrapperUsage() {
     <Article title="Using Wrapper">
       <div>
         <p>Anything inside the wrapper will be rendered.</p>
-        <pre>{childElement}</pre>
+        <Codebox>{childElement}</Codebox>
       </div>
 
       <div>
         <p>Can be outsourced from another react component</p>
-        <pre>{childComponent}</pre>
+        <Codebox>{childComponent}</Codebox>
       </div>
 
       <div>
         <p>Can also be used as template using properties</p>
-        <pre>&lt;Wrapper name="Elsa" age="12" /&gt;</pre>
+        <Codebox>&lt;Wrapper name="Elsa" age="12" /&gt;</Codebox>
       </div>
     </Article>
   );

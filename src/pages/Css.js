@@ -1,5 +1,5 @@
 import React from "react";
-import Page from "../components/wrapper/Page";
+import Page from "../components/wrappers/Page";
 import CssIndex from "../data/articles/CssIndex";
 import CssModule from "../data/articles/CssModule";
 

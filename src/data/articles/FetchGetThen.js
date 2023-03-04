@@ -1,13 +1,17 @@
 import React from "react";
-import Article from "../../components/wrapper/Article";
-import CodeSnippet from "../../components/wrapper/CodeSnippet";
-import Formula from "../../components/wrapper/Formula";
+import Article from "../../components/wrappers/Article";
+import Codebox from "../../components/codeWrappers/boxes/Codebox"
+import Tab from "../../components/codeWrappers/boxes/Tab"
+import Var from "../../components/codeWrappers/spans/Var"
+import Attn from "../../components/codeWrappers/spans/Attn"
+import Block from "../../components/codeWrappers/spans/Block"
 
 export default function FetchGetThen() {
   return (
     <>
-      <Article title="Fetch GET Then Then"
-        tagline="Retrieving returned database data"        
+      <Article
+        title="Fetch GET Then Then"
+        tagline="Retrieving returned database data"
       >
         <div>
           <p>
@@ -19,17 +23,23 @@ export default function FetchGetThen() {
             need to include this method as a return, and ned to use another{" "}
             <code>then</code> to catch the result.
           </p>
-          <pre className="codebox">
-            <span className="main">fetch</span>(
-            <pre className="tab">
+          <Codebox>
+            <Attn>fetch</Attn>(
+            <Tab>
               'https://react-meetup-6b19e-default-rtdb.firebaseio.com/meetups.json'
-            </pre>
-            ).<span className="main">then</span>(<span className="var">response</span> => {"{"}
-            <pre className="tab">return <span className="var">response</span>.json();</pre>
-            {"}"}).<span className="main">then</span>(<span className="var">data</span> => {"{"}
-            <pre className="tab"><span className="block">/* Code for <span className="var">data</span> retrieved */</span></pre>
+            </Tab>
+            ).<Attn>then</Attn>(<Var>response</Var> => {"{"}
+            <Tab>
+              return <Var>response</Var>.json();
+            </Tab>
+            {"}"}).<Attn>then</Attn>(<Var>data</Var> => {"{"}
+            <Tab>
+              <Block>
+                /* Code for <Var>data</Var> retrieved */
+              </Block>
+            </Tab>
             {"}"});
-          </pre>
+          </Codebox>
         </div>
       </Article>
     </>

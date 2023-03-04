@@ -1,5 +1,6 @@
 import React from "react";
-import Article from "../../components/wrapper/Article";
+import Article from "../../components/wrappers/Article";
+import Codebox from "../../components/codeWrappers/boxes/Codebox"
 
 export default function RrdomRouteSwitch() {
   const text1 = String.raw`import { Route, Switch } from "react-router-dom";
@@ -26,7 +27,7 @@ export default App;
     <Article title="React Router Dom: Router and Switch Component">
       <div>
         <p>App.js</p>
-        <pre>{text1}</pre>
+        <Codebox>{text1}</Codebox>
       </div>
 
       <div>

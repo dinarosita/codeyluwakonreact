@@ -1,7 +1,9 @@
 import React from "react";
-import Article from "../../components/wrapper/Article";
-import Formula from "../../components/wrapper/Formula";
-import CodeSnippet from "../../components/wrapper/CodeSnippet";
+import Article from "../../components/wrappers/Article";
+import Formula from "../../components/codeWrappers/boxes/Formula";
+import CodeSnippet from "../../components/codeWrappers/boxes/Snippet";
+import Tab from "../../components/codeWrappers/boxes/Tab"
+
 
 export default function FetchBasic() {
   return (
@@ -19,23 +21,23 @@ export default function FetchBasic() {
       </div>
       <CodeSnippet>
         fetch(
-        <pre className="tab">
+        <Tab>
           'https://react-meetup-6b19e-default-rtdb.firebaseio.com/
           <em>meetups.json</em>', <br />
           {"{"}
-          <pre className="tab">
+          <Tab>
             method: <em>"POST"</em>,
             <br />
             body: <em>JSON.stringify(meetupData)</em>,
             <br />
             headers: {"{"}
-            <pre className="tab">
+            <Tab>
               "Content-Type": <em>"application/json"</em>
-            </pre>
+            </Tab>
             {"}"}
-          </pre>
+          </Tab>
           {"}"}
-        </pre>
+        </Tab>
         )
       </CodeSnippet>
       <div>

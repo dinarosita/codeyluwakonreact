@@ -1,6 +1,6 @@
 import React from "react";
-import Article from "../../components/wrapper/Article";
-import fclasses from "../codes/Codes.module.css"
+import Article from "../../components/wrappers/Article";
+import Codebox from "../../components/codeWrappers/boxes/Codebox"
 
 export default function ListRendering() {
   const numbers = [1, 2, 3];
@@ -23,22 +23,22 @@ export default function ListRendering() {
       </div>
       <div>
         <p>Array</p>
-        <pre className={fclasses.codebox}>{arrayText}</pre>
+        <Codebox>{arrayText}</Codebox>
       </div>
       <div>
         <p>Listing</p>
-        <pre className={fclasses.codebox}>{listingText}</pre>
+        <Codebox>{listingText}</Codebox>
       </div>
       <div>
         <p>Result</p>
-        <pre className={fclasses.codebox}>
+        <Codebox>
           <p>Doubled numbers list</p>
           <ul>
             {numbers.map((number) => (
               <li key={number}>{number * 2}</li>
             ))}
           </ul>
-        </pre>
+        </Codebox>
       </div>
     </Article>
   );

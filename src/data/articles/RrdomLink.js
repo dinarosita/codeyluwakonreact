@@ -1,5 +1,6 @@
 import React from "react";
-import Article from "../../components/wrapper/Article";
+import Article from "../../components/wrappers/Article";
+import Codebox from "../../components/codeWrappers/boxes/Codebox"
 
 export default function RrdomLink() {
   const text1 = String.raw`import { Link } from "react-router-dom";
@@ -23,7 +24,7 @@ export default function MainNavigation() {
     <Article title="React Router Dom: Link Component">
       <div>
         <p>MainNavigation.js</p>
-        <pre>{text1}</pre>
+        <Codebox>{text1}</Codebox>
       </div>
 
       <div>

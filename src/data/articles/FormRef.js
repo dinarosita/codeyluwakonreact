@@ -1,7 +1,7 @@
 import React from "react";
-import Article from "../../components/wrapper/Article";
-import Formula from "../../components/wrapper/Formula";
-import CodeSnippet from "../../components/wrapper/CodeSnippet";
+import Article from "../../components/wrappers/Article";
+import Formula from "../../components/codeWrappers/boxes/Formula";
+import CodeSnippet from "../../components/codeWrappers/boxes/Snippet";
 import SubmitHandlerCode from "../codes/SubmitHandlerCode";
 
 export default function FormRef() {

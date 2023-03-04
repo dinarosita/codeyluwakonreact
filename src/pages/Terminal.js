@@ -1,5 +1,5 @@
 import React from "react";
-import Page from "../components/wrapper/Page";
+import Page from "../components/wrappers/Page";
 import TerminalBrowser from "../data/articles/TerminalBrowser";
 import GithubTerminal from "../data/articles/GIthubTerminal";
 

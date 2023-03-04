@@ -1,20 +1,25 @@
 import React from "react";
-import Article from "../../components/wrapper/Article";
-import CodeSnippet from "../../components/wrapper/CodeSnippet";
-import Formula from "../../components/wrapper/Formula";
+import Article from "../../components/wrappers/Article";
+import Codebox from "../../components/codeWrappers/boxes/Codebox"
+import Attn from "../../components/codeWrappers/spans/Attn"
+
 
 export default function FetchGetMethod() {
   return (
     <>
-      <Article title="Fetch GET" tagline="Sending HTTP request for getting data from database">
+      <Article
+        title="Fetch GET"
+        tagline="Sending HTTP request for getting data from database"
+      >
         <div>
           <p>
-            <code>GET</code> is the default HTTP request method, therefore the <code>fetch()</code> doesn't need a second argument at all.
+            <code>GET</code> is the default HTTP request method, therefore the{" "}
+            <code>fetch()</code> doesn't need a second argument at all.
           </p>
-          <pre className="codebox">
-            <span className="main">fetch</span>
+          <Codebox>
+            <Attn>fetch</Attn>
             ('https://react-meetup-6b19e-default-rtdb.firebaseio.com/meetups.json')
-          </pre>
+          </Codebox>
         </div>
       </Article>
     </>

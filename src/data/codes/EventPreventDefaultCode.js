@@ -1,15 +1,17 @@
 import React from "react";
-import classes from "./Codes.module.css";
+import Codebox from "../../components/codeWrappers/boxes/Codebox"
+import Tab from "../../components/codeWrappers/boxes/Tab";
+import Comment from "../../components/codeWrappers/spans/Comment"
 
 export default function EventPreventDefault() {
   return (
-    <pre className={classes.codebox}>
+    <Codebox>
       function <em>submitHandler</em>(<em>event</em>) {"{"}
-      <pre className="tab">
+      <Tab>
         <em>event.preventDefault()</em>;<br />
-        <pre className={classes.comment}>codes...</pre>
-      </pre>
+        <Comment>codes...</Comment>
+      </Tab>
       {"}"}
-    </pre>
+    </Codebox>
   );
 }

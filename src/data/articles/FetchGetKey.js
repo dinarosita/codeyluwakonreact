@@ -1,5 +1,8 @@
 import React from "react";
-import Article from "../../components/wrapper/Article";
+import Article from "../../components/wrappers/Article";
+import Codebox from "../../components/codeWrappers/boxes/Codebox"
+import Tab from "../../components/codeWrappers/boxes/Tab"
+
 
 export default function FetchGetKey() {
   return (
@@ -23,33 +26,33 @@ export default function FetchGetKey() {
             Meanwhile we are using array map method in our component. Therefore
             first we need to convert the retrieved data into array.
           </p>
-          <pre className="codebox">
+          <Codebox>
             .then(data => {"{"}
-            <pre className="tab">
+            <Tab>
               const meetups = [];
               <br />
               <br />
               for (const key in data) {"{"}
-              <pre className="tab">
+              <Tab>
                 const meetup = {"{"}
-                <pre className="tab">
+                <Tab>
                   id: key,
                   <br />
                   ...data[key]
-                </pre>
+                </Tab>
                 {"}"}
                 <br />
                 meetups.push(meetup);
-              </pre>
+              </Tab>
               {"}"}
               <br />
               <br />
               setIsLoading(false);
               <br />
               setLoadedMeetups(meetups);
-            </pre>
+            </Tab>
             {"}"})
-          </pre>
+          </Codebox>
         </div>
       </Article>
     </>

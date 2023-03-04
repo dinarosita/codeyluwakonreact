@@ -11,6 +11,9 @@ export default function MainNavigation() {
       <nav>
         <ul>
           <li>
+            <Link to="/context">Context</Link>
+          </li>
+          <li>
             <Link to="/css">CSS</Link>
           </li>
           <li>
@@ -18,7 +21,8 @@ export default function MainNavigation() {
           </li>
           <li>
             <Link to="/fetchget">Fetch Get</Link>
-          </li> <li>
+          </li>{" "}
+          <li>
             <Link to="/fetchpost">Fetch Post</Link>
           </li>
           <li>
@@ -30,7 +34,6 @@ export default function MainNavigation() {
           <li>
             <Link to="/form-submit">Form Submission</Link>
           </li>
-          
           <li>
             <Link to="/github">Github</Link>
           </li>
@@ -54,9 +57,6 @@ export default function MainNavigation() {
           </li>
           <li>
             <Link to="/terminal">Terminal</Link>
-          </li>
-          <li>
-            <Link to="/usecontext">useContext</Link>
           </li>
           <li>
             <Link to="/wrapper">Wrapper</Link>

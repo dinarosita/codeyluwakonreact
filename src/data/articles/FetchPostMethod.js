@@ -1,6 +1,7 @@
 import React from "react";
-import Article from "../../components/wrapper/Article";
-import CodeSnippet from "../../components/wrapper/CodeSnippet";
+import Article from "../../components/wrappers/Article";
+import Codebox from "../../components/codeWrappers/boxes/Codebox"
+import Tab from "../../components/codeWrappers/boxes/Tab"
 import FetchThenUsehistoryCode from "../codes/FetchThenUsehistoryCode";
 
 export default function FetchPostMethod() {
@@ -18,28 +19,28 @@ export default function FetchPostMethod() {
         method, the data to be stored, and in some cases other supporting
         information.
       </div>
-      <pre className="codebox">
+      <Codebox>
         <span className="main">fetch</span>(
-        <pre className="tab">
+        <Tab>
           'https://react-meetup-6b19e-default-rtdb.firebaseio.com/meetups.json',
           <br />
           {"{"}
-          <pre className="tab">
+          <Tab>
             <span className="main">method: "POST",</span>
             <br />
             <span className="main">body:</span> JSON.stringify(
             <span className="var">meetupData</span>),
             <br />
             <span className="main">headers:</span> {"{"}
-            <pre className="tab">
+            <Tab>
               <span className="main">"Content-Type":</span> "application/json"
-            </pre>
+            </Tab>
             {"}"}
-          </pre>
+          </Tab>
           {"}"}
-        </pre>
+        </Tab>
         )
-      </pre>
+      </Codebox>
 
       <div>
         <h4>Properties</h4>

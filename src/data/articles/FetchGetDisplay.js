@@ -1,5 +1,8 @@
 import React from "react";
-import Article from "../../components/wrapper/Article";
+import Article from "../../components/wrappers/Article";
+import Codebox from "../../components/codeWrappers/boxes/Codebox"
+import Tab from "../../components/codeWrappers/boxes/Tab"
+
 
 export default function FetchGetDisplay() {
   return (
@@ -24,15 +27,15 @@ export default function FetchGetDisplay() {
             system, but not here. If we async the function and await the fetch,
             we are converting the function component into a function that
             returns promise, an it's not longer qualify as a function component.
-            <pre className="codebox">
+            <Codebox>
               async function AllMeetupPage() {"{"}
-              <pre className="tab">
+              <Tab>
                 await fetch(...);
                 <br />
                 return (...)
-              </pre>
+              </Tab>
               {"}"}
-            </pre>
+            </Codebox>
           </p>
         </div>
         <div>

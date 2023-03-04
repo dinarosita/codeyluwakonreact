@@ -1,6 +1,6 @@
 import React from "react";
-import ANew from "../../components/wrapper/ANew";
-import Article from "../../components/wrapper/Article";
+import ANew from "../../components/wrappers/ANew";
+import Article from "../../components/wrappers/Article";
 
 export default function HomeAbout() {
   return (

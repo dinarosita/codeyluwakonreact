@@ -1,5 +1,5 @@
 import React from "react";
-import Page from "../components/wrapper/Page";
+import Page from "../components/wrappers/Page";
 import FormOnsubmit from "../data/articles/FormOnsubmit";
 import FormSubmission from "../data/articles/FormSubmission";
 import FormPreventDefault from "../data/articles/FormPreventDefault";

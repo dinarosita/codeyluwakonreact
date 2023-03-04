@@ -1,5 +1,5 @@
 import React from "react";
-import Page from "../components/wrapper/Page";
+import Page from "../components/wrappers/Page";
 import RrdomBrowserRouter from "../data/articles/RrdomBrowserRouter";
 import RrdomInstall from "../data/articles/RrdomInstall";
 import RrdomLink from "../data/articles/RrdomLink";
