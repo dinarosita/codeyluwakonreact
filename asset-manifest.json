@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/codeyluwakonreact/static/css/main.daf9b971.css",
-    "main.js": "/codeyluwakonreact/static/js/main.ea976a51.js",
+    "main.css": "/codeyluwakonreact/static/css/main.19ff2b8d.css",
+    "main.js": "/codeyluwakonreact/static/js/main.399572ce.js",
     "index.html": "/codeyluwakonreact/index.html",
-    "main.daf9b971.css.map": "/codeyluwakonreact/static/css/main.daf9b971.css.map",
-    "main.ea976a51.js.map": "/codeyluwakonreact/static/js/main.ea976a51.js.map"
+    "main.19ff2b8d.css.map": "/codeyluwakonreact/static/css/main.19ff2b8d.css.map",
+    "main.399572ce.js.map": "/codeyluwakonreact/static/js/main.399572ce.js.map"
   },
   "entrypoints": [
-    "static/css/main.daf9b971.css",
-    "static/js/main.ea976a51.js"
+    "static/css/main.19ff2b8d.css",
+    "static/js/main.399572ce.js"
   ]
 }
