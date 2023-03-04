@@ -9,11 +9,12 @@ import RoundTab from "../../../components/codeWrappers/brackets/RoundTab";
 import Attn from "../../../components/codeWrappers/spans/Attn";
 import Fn from "../../../components/codeWrappers/spans/Fn";
 import Var from "../../../components/codeWrappers/spans/Var";
+import Var2 from "../../../components/codeWrappers/spans/Var2";
 
 export default function FunctionChildCode() {
   return (
     <Codebox title="FunctionChild.js">
-      import React, <Curly> useContext </Curly> from "React"
+      import React, <Curly> useContext </Curly> from "react"
       <br />
       import{" "}
       <Curly>
@@ -26,7 +27,7 @@ export default function FunctionChildCode() {
       <CurlyTab>
         const <Var>darkTheme</Var> = <Attn>useContext(ThemeContext)</Attn>
         <Space />
-        const <Var>themeStyles</Var> ={" "}
+        const <Var2>themeStyles</Var2> ={" "}
         <CurlyTab>
           backgroundColor: <Var>darkTheme</Var> ? "chocolate" : "white",
           <br />
@@ -35,10 +36,22 @@ export default function FunctionChildCode() {
         <Space />
         return{" "}
         <RoundTab>
-          <Angle>
-            Demobox style=<Curly>themeStyles</Curly>
-          </Angle>
-          <Tab>Function Child</Tab>
+          <Angle>Demobox</Angle>
+          <Tab>
+            <Attn>
+              <Angle>
+                div style=
+                <Curly>
+                  <Var2>themeStyles</Var2>
+                </Curly>
+              </Angle>
+            </Attn>
+            <Tab>Function Child</Tab>
+
+            <Attn>
+              <Angle>/div</Angle>
+            </Attn>
+          </Tab>
           <Angle>/Demobox</Angle>
         </RoundTab>
       </CurlyTab>

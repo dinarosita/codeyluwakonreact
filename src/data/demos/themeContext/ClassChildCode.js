@@ -53,14 +53,18 @@ export default function ClassChildCode() {
                   <CurlyTab>
                     <Angle>Demobox</Angle>
                     <Tab>
-                      <Angle>
-                        div style=
-                        <Curly>
-                          <Var2>this.themeStyles</Var2>(<Var>darkTheme</Var>)
-                        </Curly>
-                      </Angle>
+                      <Attn>
+                        <Angle>
+                          div style=
+                          <Curly>
+                            <Var2>this.themeStyles</Var2>(<Var>darkTheme</Var>)
+                          </Curly>
+                        </Angle>
+                      </Attn>
                       <Tab>Class Child</Tab>
-                      <Angle>/div</Angle>
+                      <Attn>
+                        <Angle>/div</Angle>
+                      </Attn>
                     </Tab>
                     <Angle>/Demobox</Angle>
                   </CurlyTab>
