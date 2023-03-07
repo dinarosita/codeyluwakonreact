@@ -6,7 +6,7 @@ export default function Layout(props) {
   return (
     <div>
       <MainNavigation />
-      <main className={classes.attn}>{props.children}</main>
+      <main className={classes.imp}>{props.children}</main>
     </div>
   );
 }

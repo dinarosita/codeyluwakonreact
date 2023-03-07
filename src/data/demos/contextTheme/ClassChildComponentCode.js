@@ -5,28 +5,28 @@ import Angle from "../../../components/codeWrappers/brackets/Angle";
 import Curly from "../../../components/codeWrappers/brackets/Curly";
 import CurlyTab from "../../../components/codeWrappers/brackets/CurlyTab";
 import RoundTab from "../../../components/codeWrappers/brackets/RoundTab";
-import Space from "../../../components/codeWrappers/boxes/Spacer";
-import Attn from "../../../components/codeWrappers/spans/Attn";
+import Spacer from "../../../components/codeWrappers/boxes/Space";
+import Space from "../../../components/codeWrappers/boxes/Space";
+
+import Imp from "../../../components/codeWrappers/spans/Imp";
 import Fn from "../../../components/codeWrappers/spans/Fn";
 import Var from "../../../components/codeWrappers/spans/Var";
 import Var2 from "../../../components/codeWrappers/spans/Var2";
 
 import Val from "../../../components/codeWrappers/spans/Val";
 
-export default function ClassChildCode() {
+export default function ClassChildComponentCode() {
   return (
-    <Codebox title="ClassChild.js">
+    <Codebox title="ClassChildComponent.js">
       import React, <Curly> Component </Curly> from "react"
       <br />
       import{" "}
-      <Curly>
-        {" "}
-        <Attn>ThemeContext</Attn>{" "}
-      </Curly>{" "}
-      from "./ThemeApp"
+      <Imp>
+        <Curly> ThemeContext </Curly> from "./MainApp"
+      </Imp>
       <Space />
-      export default <Attn>class</Attn> <Fn>ClassConsumer</Fn> extends{" "}
-      <Attn>Component</Attn>{" "}
+      export default <Imp>class</Imp> <Fn>ClassChildComponent</Fn> extends{" "}
+      <Imp>Component</Imp>{" "}
       <CurlyTab>
         <Var2>themeStyles</Var2>(<Val>dark</Val>)
         <CurlyTab>
@@ -38,42 +38,38 @@ export default function ClassChildCode() {
           </CurlyTab>
         </CurlyTab>
         <Space />
-        <Attn>render</Attn>(){" "}
+        <Imp>render</Imp>(){" "}
         <CurlyTab>
           return{" "}
           <RoundTab>
-            <Attn>
+            <Imp>
               <Angle>ThemeContext.Consumer</Angle>
-            </Attn>
+            </Imp>
             <Tab>
               <Curly>
                 <Var>darkTheme</Var> =>{" "}
                 <CurlyTab>
                   return{" "}
                   <CurlyTab>
-                    <Angle>Demobox</Angle>
-                    <Tab>
-                      <Attn>
-                        <Angle>
-                          div style=
-                          <Curly>
-                            <Var2>this.themeStyles</Var2>(<Var>darkTheme</Var>)
-                          </Curly>
-                        </Angle>
-                      </Attn>
-                      <Tab>Class Child</Tab>
-                      <Attn>
-                        <Angle>/div</Angle>
-                      </Attn>
-                    </Tab>
-                    <Angle>/Demobox</Angle>
+                    <Imp>
+                      <Angle>
+                        div style=
+                        <Curly>
+                          <Var2>this.themeStyles</Var2>(<Var>darkTheme</Var>)
+                        </Curly>
+                      </Angle>
+                    </Imp>
+                    <Tab>Class Child</Tab>
+                    <Imp>
+                      <Angle>/div</Angle>
+                    </Imp>
                   </CurlyTab>
                 </CurlyTab>
               </Curly>
             </Tab>
-            <Attn>
-              <Angle>/ThemeContext.Consumer</Angle>
-            </Attn>
+            <Imp>
+              <Angle>/contextTheme.Consumer</Angle>
+            </Imp>
           </RoundTab>
         </CurlyTab>
       </CurlyTab>

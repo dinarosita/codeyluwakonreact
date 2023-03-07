@@ -1,33 +1,43 @@
-span.comment {
+.comment {
   color: olive;
 }
 
-span.attn {
+.imp {
   color: indianred;
   font-weight: bold;
 }
 
-span.var {
+.impvar {
+    color: mediumorchid;
+    font-weight: bold;
+  }
+
+.var {
   color: mediumorchid;
   font-weight: normal;
 }
 
-span.var2 {
+.var2 {
     color: green;
     font-weight: normal;
   }
 
-span.val{
+.val{
     color: rebeccapurple;
     font-weight: normal;
   }
 
-span.block {
+.block {
   color: olive;
   font-weight: normal;
 }
 
-span.fn {
+.fn {
     color: chocolate;
     font-weight: normal;
   }
+
+.regular {
+    color: steelblue;
+    font-weight: normal;
+}

@@ -3,9 +3,13 @@ import Article from "../../components/wrappers/Article";
 import Formula from "../../components/codeWrappers/boxes/Formula";
 
 import Var from "../../components/codeWrappers/spans/Var";
-import Attn from "../../components/codeWrappers/spans/Attn";
+import Imp from "../../components/codeWrappers/spans/Imp";
+import Impvar from "../../components/codeWrappers/spans/Impvar";
 import Block from "../../components/codeWrappers/spans/Block";
-
+import Tab from "../../components/codeWrappers/boxes/Tab";
+import Curly from "../../components/codeWrappers/brackets/Curly";
+import Angle from "../../components/codeWrappers/brackets/Angle";
+import Regular from "../../components/codeWrappers/spans/Regular";
 
 export default function ContextBasics() {
   return (
@@ -24,8 +28,8 @@ export default function ContextBasics() {
           </li>
         </ul>
         <Formula>
-          export const <Var>NameContext</Var> ={" "}
-          <Attn>React.createContext()</Attn>
+          export const <Impvar>ContextName</Impvar> ={" "}
+          <Imp>React.createContext()</Imp>
         </Formula>
       </div>
 
@@ -34,7 +38,7 @@ export default function ContextBasics() {
 
         <ul>
           <li>
-            Use <code>&lt;NameContext.Provider&gt;</code> to make a parent
+            Use <code>&lt;ContextName.Provider&gt;</code> to make a parent
             element context provider.
           </li>
           <li>
@@ -47,40 +51,65 @@ export default function ContextBasics() {
           </li>
         </ul>
         <Formula>
-          &lt;
-          <Var>NameContext</Var>
-          .Provider{" "}
-          <Block>
-            value={"{"}
-            <Var>darkTheme</Var>
-            {"}"}
-          </Block>
-          &gt;
+          <Imp>
+            <Angle>
+              <Impvar>ContextName</Impvar>.Provider
+              <Block>
+                {" "}
+                value=
+                <Curly>
+                  <Var>contextValue</Var>
+                </Curly>
+              </Block>
+            </Angle>
+          </Imp>
         </Formula>
       </div>
 
-
-
       <div>
-        <h3>Child component</h3>
-        <p>Can be created as class component or function component:</p>
+        <h3>Child options</h3>
+
         <ul>
+          
           <li>
-            <strong>Class component</strong>
+            <strong>Function component</strong>
             <Formula>
-              &lt;
-              <Var>NameContext</Var>
-              .Consumer &gt;
+              const <Var>contextVal</Var> ={" "}
+              <Imp>
+                useContext(<Impvar>ContextName</Impvar>)
+              </Imp>
             </Formula>
           </li>
           <li>
-            <strong>Function component</strong>
-            <Formula>useContext()</Formula>
-            
-            Function based component is way less cluttered than the other one.
+            <strong>Class component</strong>
+            <Formula>
+              <Imp>
+                <Angle>
+                  <Impvar>ContextName</Impvar>.Consumer
+                </Angle>
+              </Imp>
+              <Tab>
+                <Block>
+                  <Curly>
+                    <Regular>
+                      <Var>contextVal</Var> => <Curly>...code...</Curly>
+                    </Regular>
+                  </Curly>
+                </Block>
+              </Tab>
+              <Imp>
+                <Angle>
+                  <Impvar>/ContextName</Impvar>.Consumer
+                </Angle>
+              </Imp>
+            </Formula>
           </li>
         </ul>
-        <p> </p>
+        <p>
+          Function based component is more simple and versatile than the class
+          based one. It also allow creation of context provider wrapper and
+          custom context hook to further simplify frequent use.
+        </p>
       </div>
     </Article>
   );

@@ -1,8 +1,17 @@
+.democard {
+  border: 4px double chocolate;
+  /* width: fit-content; */
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .demobox {
   border: 1px solid brown;
   width: fit-content;
 }
 
 .demobox > * {
-    padding: 1rem;
+  padding: 1rem;
 }

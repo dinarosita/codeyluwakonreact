@@ -1,7 +1,7 @@
 import React from "react";
 import Article from "../../components/wrappers/Article";
 import Codebox from "../../components/codeWrappers/boxes/Codebox"
-import Attn from "../../components/codeWrappers/spans/Attn"
+import Imp from "../../components/codeWrappers/spans/Imp"
 
 
 export default function FetchGetMethod() {
@@ -17,7 +17,7 @@ export default function FetchGetMethod() {
             <code>fetch()</code> doesn't need a second argument at all.
           </p>
           <Codebox>
-            <Attn>fetch</Attn>
+            <Imp>fetch</Imp>
             ('https://react-meetup-6b19e-default-rtdb.firebaseio.com/meetups.json')
           </Codebox>
         </div>

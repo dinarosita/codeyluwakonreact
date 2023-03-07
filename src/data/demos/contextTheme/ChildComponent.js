@@ -1,8 +1,9 @@
 import React, { useContext } from "react";
+import { ThemeContext } from "./MainApp";
 import Demobox from "../../../components/codeWrappers/demo/Demobox";
-import { ThemeContext } from "./ThemeApp";
 
-export default function FunctionChild() {
+
+export default function ChildComponent() {
   const darkTheme = useContext(ThemeContext);
 
   const themeStyles = {
@@ -12,7 +13,7 @@ export default function FunctionChild() {
 
   return (
     <Demobox>
-      <div style={themeStyles}>Function Child</div>
+      <div style={themeStyles}>Context Child</div>
     </Demobox>
   );
 }

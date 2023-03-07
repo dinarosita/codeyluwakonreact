@@ -1,0 +1,23 @@
+.toggleButton {
+    border: 3px double rgb(185, 185, 98);
+    border-radius: 5px;
+    background-color: white;
+    color: olive;
+    font-weight: bold;
+    font-size: 1rem;
+    width: fit-content;
+    min-width: 8rem;
+    padding: .25rem;
+    margin: 0;
+}
+
+.toggleButton:hover {
+    background-color: rgb(185, 185, 98);
+    color:white
+
+}
+
+.displayBox {
+    /* border: 1px dotted indianred; */
+    padding: 0 1rem;
+}

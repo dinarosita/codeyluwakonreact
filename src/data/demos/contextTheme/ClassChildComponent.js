@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Demobox from "../../../components/codeWrappers/demo/Demobox";
-import { ThemeContext } from "./ThemeApp";
+import { ThemeContext } from "./MainApp";
 
-export default class ClassChild extends Component {
+export default class ClassChildComponent extends Component {
   themeStyles(dark) {
     return {
       backgroundColor: dark ? "chocolate" : "white",

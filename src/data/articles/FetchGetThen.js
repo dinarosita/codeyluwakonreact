@@ -3,7 +3,7 @@ import Article from "../../components/wrappers/Article";
 import Codebox from "../../components/codeWrappers/boxes/Codebox"
 import Tab from "../../components/codeWrappers/boxes/Tab"
 import Var from "../../components/codeWrappers/spans/Var"
-import Attn from "../../components/codeWrappers/spans/Attn"
+import Imp from "../../components/codeWrappers/spans/Imp"
 import Block from "../../components/codeWrappers/spans/Block"
 
 export default function FetchGetThen() {
@@ -24,15 +24,15 @@ export default function FetchGetThen() {
             <code>then</code> to catch the result.
           </p>
           <Codebox>
-            <Attn>fetch</Attn>(
+            <Imp>fetch</Imp>(
             <Tab>
               'https://react-meetup-6b19e-default-rtdb.firebaseio.com/meetups.json'
             </Tab>
-            ).<Attn>then</Attn>(<Var>response</Var> => {"{"}
+            ).<Imp>then</Imp>(<Var>response</Var> => {"{"}
             <Tab>
               return <Var>response</Var>.json();
             </Tab>
-            {"}"}).<Attn>then</Attn>(<Var>data</Var> => {"{"}
+            {"}"}).<Imp>then</Imp>(<Var>data</Var> => {"{"}
             <Tab>
               <Block>
                 /* Code for <Var>data</Var> retrieved */
